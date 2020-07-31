@@ -11,6 +11,9 @@ using namespace std;
 int avar;
 int main()
 {
+    /*
+     * 作用域运算符的使用
+     */
     int avar;
     avar = 25;
     ::avar = 10;

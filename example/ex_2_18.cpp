@@ -1,15 +1,23 @@
 /*
  * @Author: tinin
  * @Date: 2020-07-31 10:25:54
- * @LastEditTime: 2020-07-31 10:33:05
+ * @LastEditTime: 2020-07-31 10:55:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /study_cpp/example/ex_2_18.cpp
+ * @FiilePath: /study_cpp/example/ex_2_18.cpp
  */
 #include "iostream"
 using namespace std;
 int main()
 {
+    /*
+     * 变量和引用的关系
+     * 引用声明时就得初始化
+     * 以下使用错误
+     * int i;
+     * int &j;
+     * j = i;
+     */
     int i;
     int &j = i;
     i = 30;

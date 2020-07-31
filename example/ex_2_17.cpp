@@ -1,7 +1,7 @@
 /*
  * @Author: tintin
  * @Date: 2020-07-31 10:04:16
- * @LastEditTime: 2020-07-31 10:14:49
+ * @LastEditTime: 2020-07-31 10:55:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_2_17.cpp
@@ -10,6 +10,9 @@
 using namespace std;
 int main()
 {
+    /*
+     * 对动态分配是否成功进行检查
+     */
     int *p;
     // p = new int;
     if (!p)
