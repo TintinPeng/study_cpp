@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-03 10:05:49
- * @LastEditTime: 2020-08-03 17:07:16
+ * @LastEditTime: 2020-08-03 20:17:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/opencv/ex1.cpp
@@ -19,19 +19,8 @@ int main()
 {
     string filename = "./opencv/001.png";
     Mat img = imread(filename);
-    auto size = img.size();
-    int w = size.width;
-    int h = size.height;
-    Mat re_image;
-    resize(img, re_image, Size(w / 2, h / 2));
-    while (true)
-    {
-        imshow(filename, re_image);
-        int k = waitKey(0);
-        if (k == 27)
-        {
-            break;
-        }
-    }
-    destroyAllWindows();
+
+    namedWindow(filename, 0); //创建窗口
+    imshow(filename, img);
+    waitKey(0);
 }
