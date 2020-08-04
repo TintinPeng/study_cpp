@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-03 10:05:49
- * @LastEditTime: 2020-08-03 20:17:02
+ * @LastEditTime: 2020-08-04 20:28:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/opencv/ex1.cpp
@@ -17,10 +17,9 @@ using namespace cv;
 
 int main()
 {
-    string filename = "./opencv/001.png";
+    string filename = "./opencv/pictures/001.png";
     Mat img = imread(filename);
-
-    namedWindow(filename, 0); //创建窗口
+    namedWindow(filename, 0);
     imshow(filename, img);
     waitKey(0);
 }
