@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-01 09:49:39
- * @LastEditTime: 2020-08-01 10:02:54
+ * @LastEditTime: 2020-08-05 15:00:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_2_11.cpp
@@ -29,6 +29,8 @@ int main()
 {
     /*
      * 参数类型不同的函数重载
+     * 名字,参数个数,参数类型在检查范围内
+     * 返回值类型不在
      */
     int i = 12;
     long l = 1234;
