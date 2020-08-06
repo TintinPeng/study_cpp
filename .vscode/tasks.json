@@ -8,15 +8,15 @@
             "args": [
                 "-g",
                 "${file}",
-                "-ggdb",
-                "`",
-                "pkg-config",
-                "--cflags",
-                "--libs",
-                "opencv4",
-                "`",
+                // "-ggdb",
+                // "`",
+                // "pkg-config",
+                // "--cflags",
+                // "--libs",
+                // "opencv4",
+                // "`",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/bin/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
