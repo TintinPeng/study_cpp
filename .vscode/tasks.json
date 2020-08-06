@@ -16,7 +16,8 @@
                 // "opencv4",
                 // "`",
                 "-o",
-                "${fileDirname}/bin/${fileBasenameNoExtension}"
+                // "${fileDirname}/bin/${fileBasenameNoExtension}"
+                "${workspaceFolder}/bin/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
