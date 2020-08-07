@@ -1,0 +1,20 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Comment[zh_CN]=
+Comment=
+Exec=/usr/bin/code /home/tintin/Workspaces/study_cpp/.vscode/cpp.code-workspace
+GenericName[zh_CN]=
+GenericName=
+Icon=/home/tintin/Workspaces/study_cpp/.vscode/icons8-c++.svg
+MimeType=
+Name[zh_CN]=study_cpp
+Name=study_cpp
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
