@@ -70,18 +70,26 @@
             "valarray": "cpp",
             "variant": "cpp"
         },
+
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
         "editor.fontSize": 16,
+        "editor.suggestSelection": "first",
+        "editor.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "on",
+
         "workbench.iconTheme": "eq-material-theme-icons",
         "workbench.colorTheme": "One Dark Pro",
         "oneDarkPro.editorTheme": "panda",
         "prettier.tabWidth": 4,
-        "editor.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
+
         "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
-        "code-runner.runInTerminal": true,
-        "code-runner.saveAllFilesBeforeRun": true,
-        "cmake.cmakePath": "/usr/bin/cmake",
-        "cmake.configureOnOpen": true
-        // "code-runner.fileDirectoryAsCwd": true,
-        // "code-runner.cwd": "${workspaceFolder}/bin"
+
+        "explorer.confirmDelete": false,
+
+        "commentTranslate.targetLanguage": "zh-CN",
+        "commentTranslate.multiLineMerge": true,
+        "indentRainbow.excludedLanguages": ["plaintext"]
     }
 }
