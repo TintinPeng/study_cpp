@@ -17,7 +17,7 @@
                 // "`",
                 "-o",
                 // "${fileDirname}/bin/${fileBasenameNoExtension}"
-                "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+                "${workspaceFolder}/build/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
