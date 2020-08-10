@@ -1,11 +1,12 @@
 /*
  * @Author: your name
- * @Date: 2020-08-10 15:20:54
- * @LastEditTime: 2020-08-10 15:57:30
+ * @Date: 2020-08-10 16:02:51
+ * @LastEditTime: 2020-08-10 16:04:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/ex_3_5.cpp
+ * @FilePath: /study_cpp/src/ex_3_6.cpp
  */
+
 #include "iostream"
 #include "cmath"
 
@@ -17,16 +18,16 @@ private:
     double real, imag;
 
 public:
-    complex(double r, double i)
+    complex()
+    {
+        real = 0;
+        imag = 0;
+    }
+    void init(double r, double i)
     {
         real = r;
         imag = i;
     }
-    // void init(double r, double i)
-    // {
-    //     real = r;
-    //     imag = i;
-    // }
 
     double complex_abs()
     {
@@ -61,7 +62,8 @@ public:
 
 int main(int argc, char const *argv[])
 {
-    complex num(-3, 4);
+    complex num;
+    num.init(3, 5);
     num.complex_abs();
     num.complex_print();
     return 0;
