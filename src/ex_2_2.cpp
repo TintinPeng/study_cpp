@@ -1,7 +1,7 @@
 /*
  * @Author: tintin
  * @Date: 2020-08-01 08:46:51
- * @LastEditTime: 2020-08-01 08:52:06
+ * @LastEditTime: 2020-08-10 19:06:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_2_2.cpp
@@ -9,8 +9,7 @@
 #include "iostream"
 using namespace std;
 
-class sum
-{
+class sum {
 public:
     int x, y, z;
 

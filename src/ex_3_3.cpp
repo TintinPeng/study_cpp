@@ -6,13 +6,12 @@
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_3_3.cpp
  */
-#include "iostream"
 #include "cmath"
+#include "iostream"
 
 using namespace std;
 
-class complex
-{
+class complex {
 private:
     double real, imag;
 
@@ -32,23 +31,15 @@ public:
 
     void complex_print()
     {
-        if (real != 0)
-        {
-            if (imag > 0)
-            {
+        if (real != 0) {
+            if (imag > 0) {
                 cout << real << "+" << imag << "i的绝对值是" << complex_abs() << endl;
-            }
-            else if (imag == 0)
-            {
+            } else if (imag == 0) {
                 cout << real << "的绝对值是" << complex_abs() << endl;
-            }
-            else if (imag < 0)
-            {
+            } else if (imag < 0) {
                 cout << real << imag << "i的绝对值是" << complex_abs() << endl;
             }
-        }
-        else if (real == 0)
-        {
+        } else if (real == 0) {
             cout << imag << "i的绝对值是" << complex_abs() << endl;
         }
     }

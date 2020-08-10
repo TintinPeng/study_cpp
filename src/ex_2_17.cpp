@@ -13,10 +13,9 @@ int main()
     /*
      * 对动态分配是否成功进行检查
      */
-    int *p;
+    int* p;
     // p = new int;
-    if (!p)
-    {
+    if (!p) {
         cout << "动态内存分配失败!" << endl;
         return 1;
     }

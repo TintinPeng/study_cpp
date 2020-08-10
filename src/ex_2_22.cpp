@@ -1,7 +1,7 @@
 /*
  * @Author: tintin
  * @Date: 2020-07-31 10:26:57
- * @LastEditTime: 2020-07-31 14:18:00
+ * @LastEditTime: 2020-08-10 19:05:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_2_22.cpp
@@ -9,9 +9,9 @@
 #include "iostream"
 using namespace std;
 
-int a[] = {1, 3, 5, 7, 9};
+int a[] = { 1, 3, 5, 7, 9 };
 
-int &index(int i)
+int& index(int i)
 {
     return a[i];
 }
@@ -23,8 +23,7 @@ int main()
      */
     index(2) = 25;
     cout << index(2) << endl;
-    for (int i = 0; i < 5; i++)
-    {
+    for (int i = 0; i < 5; i++) {
         cout << a[i] << endl;
     }
 }

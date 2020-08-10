@@ -9,7 +9,7 @@
 #include "iostream"
 using namespace std;
 
-void swap(int &m, int &n)
+void swap(int& m, int& n)
 {
     int tmp;
     tmp = m;

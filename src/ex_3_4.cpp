@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-09 18:00:57
- * @LastEditTime: 2020-08-10 15:20:32
+ * @LastEditTime: 2020-08-10 19:04:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/ex_3_4.cpp
@@ -10,8 +10,7 @@
 
 using namespace std;
 
-class Point
-{
+class Point {
 private:
     int x, y;
     bool init_flag;
@@ -26,8 +25,7 @@ public:
 
     int get_x()
     {
-        if (init_flag != true)
-        {
+        if (init_flag != true) {
             cout << "该对象对x没有初始化" << endl;
             return 0;
         }
@@ -36,8 +34,7 @@ public:
 
     int get_y()
     {
-        if (init_flag != true)
-        {
+        if (init_flag != true) {
             cout << "该对象对y没有初始化" << endl;
             return 0;
         }

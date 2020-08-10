@@ -17,8 +17,8 @@ int main()
      * 但是可以将引用的地址赋值给指针
      */
     int i = 15;
-    int *iptr = &i;
-    int &rptr = i;
+    int* iptr = &i;
+    int& rptr = i;
     cout << "i = " << i << endl;
     cout << "*iptr = " << *iptr << endl;
     cout << "rptr = " << rptr << endl;

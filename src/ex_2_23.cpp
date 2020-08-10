@@ -1,7 +1,7 @@
 /*
  * @Author: tintin
  * @Date: 2020-07-31 10:27:05
- * @LastEditTime: 2020-07-31 14:28:16
+ * @LastEditTime: 2020-08-10 19:05:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_2_23.cpp
@@ -10,12 +10,12 @@
 #include "iostream"
 using namespace std;
 
-int &max(int &num1, int &num2)
+int& max(int& num1, int& num2)
 {
     return (num1 > num2) ? num1 : num2;
 }
 
-int &min(int &num1, int &num2)
+int& min(int& num1, int& num2)
 {
     return (num1 < num2) ? num1 : num2;
 }
