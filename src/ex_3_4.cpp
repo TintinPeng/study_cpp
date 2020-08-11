@@ -44,6 +44,10 @@ public:
 
 int main()
 {
+    /* 
+     * 通过对象名和对象选择符访问对象中的成员
+     * 并研究一下没有赋初值的情况
+     */
     Point op1, op2, op3;
     int i, j;
     op1.setpoint(1, 2);

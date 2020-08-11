@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-10 16:02:51
- * @LastEditTime: 2020-08-10 19:05:17
+ * @LastEditTime: 2020-08-11 14:14:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/ex_3_6.cpp
@@ -53,6 +53,9 @@ public:
 
 int main(int argc, char const* argv[])
 {
+    /* 
+     * 构造函数可以不带参数
+     */
     complex num;
     num.init(3, 5);
     num.complex_abs();
