@@ -89,17 +89,21 @@
         "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
 
         "explorer.confirmDelete": false,
+        "explorer.confirmDragAndDrop": false,
 
         "commentTranslate.targetLanguage": "zh-CN",
         "commentTranslate.multiLineMerge": true,
 
         "indentRainbow.excludedLanguages": ["plaintext"],
 
+        "code-runner.runInTerminal": true,
+        "code-runner.saveAllFilesBeforeRun": true,
+        "code-runner.saveFileBeforeRun": true,
         "code-runner.executorMap": {
             "javascript": "node",
             "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
             "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-            "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm -rf $dir$fileNameWithoutExt && cd ..",
+            "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm -rf $dir$fileNameWithoutExt && cd ../..",
             "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
             "php": "php",
             "python": "python -u",
@@ -143,9 +147,7 @@
             "scss": "scss --style expanded",
             "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css"
         },
-        "code-runner.runInTerminal": true,
-        "code-runner.saveAllFilesBeforeRun": true,
-        "code-runner.saveFileBeforeRun": true,
+
         "C_Cpp.clang_format_fallbackStyle": "WebKit"
     }
 }
