@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-12 09:20:08
- * @LastEditTime: 2020-08-12 09:21:11
+ * @LastEditTime: 2020-08-12 09:25:57
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/practice/pr_1.cpp
@@ -25,5 +25,11 @@ int main(int argc, char const* argv[])
     double k = stod(strd);
     float l = stof(strf);
     cout << "str = " << i << " str = " << j << " str = " << k << " str = " << l << endl;
+    /* 
+     * c语言中字符转换
+     */
+    string str = "800";
+    int m = atoi(str.c_str());
+    cout << "str = " << m << endl;
     return 0;
 }
