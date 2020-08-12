@@ -1,10 +1,10 @@
 /*
  * @Author: your name
- * @Date: 2020-08-12 09:46:33
- * @LastEditTime: 2020-08-12 10:04:00
+ * @Date: 2020-08-12 10:09:59
+ * @LastEditTime: 2020-08-12 10:15:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/example/ex_3_13.cpp
+ * @FilePath: /study_cpp/src/example/ex_3_15.cpp
  */
 
 #include "cmath"
@@ -17,7 +17,13 @@ private:
     double real, imag;
 
 public:
-    complex(double r = 0.0, double i = 0.0)
+    complex()
+    {
+        real = 0.0;
+        imag = 0.0;
+    }
+
+    complex(double r, double i = 9.0) //定义为9是为了方便理解
     {
         real = r;
         imag = i;
@@ -25,7 +31,7 @@ public:
 
     ~complex()
     {
-        cout << "析构函数被调用" << endl;
+        // cout << "析构函数被调用" << endl;
     }
 
     double complex_abs()
@@ -54,19 +60,20 @@ public:
 int main(int argc, char const* argv[])
 {
     /* 
-     * 含有构造函数和析构函数的complex类
-     * 如果构造函数有new动态分配存储空间,应该用delete释放动态分配的空间
+     * 用只有一个参数的构造函数给对象数组赋值
+     * 
      */
-    complex num1;
-    num1.complex_abs();
-    num1.complex_print();
+    complex num1[3] = { 1, 2, 3 };
+    for (int i = 0; i < 3; i++) {
+        num1[i].complex_abs();
+        num1[i].complex_print();
+    }
+    cout << endl;
+    complex num2[3] = { 1 }; //1:调用了有参数构造函数;2,3:调用了无参数构造函数;
+    for (int i = 0; i < 3; i++) {
+        num2[i].complex_abs();
+        num2[i].complex_print();
+    }
 
-    complex num2(5);
-    num2.complex_abs();
-    num2.complex_print();
-
-    complex num3(3, 4);
-    num3.complex_abs();
-    num3.complex_print();
     return 0;
 }
