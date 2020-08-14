@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-12 17:01:20
- * @LastEditTime: 2020-08-12 17:04:15
+ * @LastEditTime: 2020-08-14 15:30:35
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_29.cpp
@@ -60,14 +60,13 @@ void Student::show_summary()
 
 int main(int argc, char const* argv[])
 {
-    Student stu[2] = {
-        Student("李明", "00001", 90),
-        Student("周华", "00002", 80)
-    };
-    stu[0].show_student();
-    stu[0].show_summary();
+
+    Student stu0("李明", "00001", 90);
+    stu0.show_student();
+    stu0.show_summary();
     cout << "----------------------" << endl;
-    stu[1].show_student();
-    stu[1].show_summary();
+    Student stu1("周华", "00002", 80);
+    stu1.show_student();
+    stu1.show_summary();
     return 0;
 }
