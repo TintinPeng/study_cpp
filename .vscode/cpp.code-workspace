@@ -81,6 +81,7 @@
         "editor.fontFamily": "Fira Code",
         "editor.fontLigatures": "true",
         "editor.fontWeight": "normal",
+        "editor.mouseWheelZoom": true,
 
         "terminal.integrated.fontFamily": "Source Code Pro Medium,'monospace', monospace,'Droid Sans Fallback'",
         // "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
@@ -153,7 +154,7 @@
         },
 
         "C_Cpp.clang_format_fallbackStyle": "WebKit",
-        "editor.mouseWheelZoom": true,
+
         "debug.console.fontSize": 18
     }
 }
