@@ -152,6 +152,8 @@
             "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css"
         },
 
-        "C_Cpp.clang_format_fallbackStyle": "WebKit"
+        "C_Cpp.clang_format_fallbackStyle": "WebKit",
+        "editor.mouseWheelZoom": true,
+        "debug.console.fontSize": 18
     }
 }
