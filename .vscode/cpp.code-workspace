@@ -73,11 +73,17 @@
 
         "editor.tabSize": 4,
         "editor.detectIndentation": false,
-        "editor.fontSize": 16,
+        "editor.fontSize": 18,
         "editor.suggestSelection": "first",
-        "editor.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
         "editor.formatOnSave": true,
         "editor.wordWrap": "on",
+        // "editor.fontFamily": "Source Code Pro Medium,'monospace', monospace,'Droid Sans Fallback'",
+        "editor.fontFamily": "Fira Code",
+        "editor.fontLigatures": "true",
+        "editor.fontWeight": "normal",
+
+        "terminal.integrated.fontFamily": "Source Code Pro Medium,'monospace', monospace,'Droid Sans Fallback'",
+        // "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
 
         "workbench.iconTheme": "eq-material-theme-icons",
         "workbench.colorTheme": "One Dark Pro",
@@ -85,8 +91,6 @@
         "oneDarkPro.editorTheme": "ayu",
 
         "prettier.tabWidth": 4,
-
-        "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
 
         "explorer.confirmDelete": false,
         "explorer.confirmDragAndDrop": false,
