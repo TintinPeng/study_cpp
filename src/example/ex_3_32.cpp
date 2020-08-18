@@ -1,14 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2020-08-18 09:27:28
- * @LastEditTime: 2020-08-18 09:41:29
+ * @LastEditTime: 2020-08-18 15:16:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_32.cpp
  */
 
 #include "iostream"
-
 using namespace std;
 
 class small_cat {
@@ -51,6 +50,7 @@ double small_cat::total_number = 0;
 int main(int argc, char const* argv[])
 {
     /*
+     * 
      * 静态成员函数访问静态数据成员
      */
     small_cat w1(0.5), w2(0.8), w3(0.7);
