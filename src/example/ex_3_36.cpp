@@ -1,17 +1,18 @@
 /*
  * @Author: your name
- * @Date: 2020-08-21 09:04:36
- * @LastEditTime: 2020-08-21 10:56:57
+ * @Date: 2020-08-21 10:54:17
+ * @LastEditTime: 2020-08-21 11:03:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/example/ex_3_34.cpp
+ * @FilePath: /study_cpp/src/example/ex_3_36.cpp
  */
+
 #include "iostream"
 
 using namespace std;
 
-class Girl;
 class Boy;
+class Girl;
 
 class Boy {
 private:
@@ -21,7 +22,7 @@ private:
 public:
     Boy(string, int);
     ~Boy();
-    void prdata(const Girl&);
+    void disp(const Girl&);
 };
 
 Boy::Boy(string N, int A)
@@ -42,7 +43,7 @@ private:
 public:
     Girl(string, int);
     ~Girl();
-    friend void Boy::prdata(const Girl&);
+    friend Boy;
 };
 
 Girl::Girl(string N, int A)
@@ -55,18 +56,20 @@ Girl::~Girl()
 {
 }
 
-void Boy::prdata(const Girl& G)
+void Boy::disp(const Girl& G)
 {
-    cout << "女孩的姓名:" << G.name << endl;
-    cout << "女孩的年龄:" << G.age << endl;
-    cout << "男孩的姓名:" << name << endl;
-    cout << "男孩的年龄:" << age << endl;
+
+    cout << "男孩的姓名:" << name << "   "
+         << "男孩的年龄:" << age << endl;
+    ;
+    cout << "女孩的姓名:" << G.name << "   "
+         << "女孩的年龄:" << G.age << endl;
 }
 
 int main(int argc, char const* argv[])
 {
     /*
-     * 一个类的函数成员同时为另一个类的友元函数
+     * 友元类
      */
     Girl G[3] = {
         Girl("小刘", 18),
@@ -80,7 +83,7 @@ int main(int argc, char const* argv[])
     };
 
     for (int i = 0; i < 3; i++) {
-        B[i].prdata(G[i]);
+        B[i].disp(G[i]);
     }
 
     return 0;

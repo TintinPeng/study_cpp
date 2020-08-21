@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 09:04:36
- * @LastEditTime: 2020-08-21 09:23:10
+ * @LastEditTime: 2020-08-21 10:56:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_34.cpp
@@ -65,6 +65,9 @@ void prdata(const Girl& G, const Boy& B)
 
 int main(int argc, char const* argv[])
 {
+    /*
+     * 一个函数同时为两个类的友元函数
+     */
     Girl G[3] = {
         Girl("小刘", 18),
         Girl("小李", 18),
