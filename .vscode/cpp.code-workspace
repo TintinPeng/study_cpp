@@ -71,30 +71,12 @@
             "variant": "cpp"
         },
 
-        "editor.tabSize": 4,
-        "editor.detectIndentation": false,
-        "editor.fontSize": 18,
-        "editor.suggestSelection": "first",
-        "editor.formatOnSave": true,
-        "editor.wordWrap": "on",
-        // "editor.fontFamily": "Source Code Pro Medium,'monospace', monospace,'Droid Sans Fallback'",
-        "editor.fontFamily": "Fira Code",
-        "editor.fontLigatures": "true",
-        "editor.fontWeight": "normal",
-        "editor.mouseWheelZoom": true,
-
-        "terminal.integrated.fontFamily": "Source Code Pro Medium,'monospace', monospace,'Droid Sans Fallback'",
-        // "terminal.integrated.fontFamily": "'Hack', 'monospace', monospace, 'Droid Sans Fallback'",
-
         "workbench.iconTheme": "eq-material-theme-icons",
         "workbench.colorTheme": "One Dark Pro",
 
         "oneDarkPro.editorTheme": "ayu",
 
         "prettier.tabWidth": 4,
-
-        "explorer.confirmDelete": false,
-        "explorer.confirmDragAndDrop": false,
 
         "commentTranslate.targetLanguage": "zh-CN",
         "commentTranslate.multiLineMerge": true,
@@ -155,9 +137,7 @@
 
         "C_Cpp.clang_format_fallbackStyle": "WebKit",
 
-        "debug.console.fontSize": 18,
         "vscode-neovim.neovimInitPath": "/home/tintin/.config/nvim/init.vim",
-        "vscode-neovim.neovimPath": "/usr/bin/nvim",
-        "editor.lineNumbers": "relative"
+        "vscode-neovim.neovimPath": "/usr/bin/nvim"
     }
 }
