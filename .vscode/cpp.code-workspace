@@ -155,6 +155,9 @@
 
         "C_Cpp.clang_format_fallbackStyle": "WebKit",
 
-        "debug.console.fontSize": 18
+        "debug.console.fontSize": 18,
+        "vscode-neovim.neovimInitPath": "/home/tintin/.config/nvim/init.vim",
+        "vscode-neovim.neovimPath": "/usr/bin/nvim",
+        "editor.lineNumbers": "relative"
     }
 }

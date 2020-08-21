@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 10:54:17
- * @LastEditTime: 2020-08-21 11:03:39
+ * @LastEditTime: 2020-08-21 16:07:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_36.cpp
@@ -58,7 +58,6 @@ Girl::~Girl()
 
 void Boy::disp(const Girl& G)
 {
-
     cout << "男孩的姓名:" << name << "   "
          << "男孩的年龄:" << age << endl;
     ;
