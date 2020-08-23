@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 17:21:05
- * @LastEditTime: 2020-08-22 10:38:30
+ * @LastEditTime: 2020-08-22 10:53:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_37.cpp
@@ -64,6 +64,9 @@ void B::show()
 }
 int main(int argc, char const* argv[])
 {
+    /*
+     * 对象成员的初始化
+     */
     B b(1, 2, 3);
     b.show();
     return 0;
