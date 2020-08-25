@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-25 20:57:55
- * @LastEditTime: 2020-08-25 21:11:25
+ * @LastEditTime: 2020-08-25 21:17:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_4_3.cpp
@@ -50,7 +50,7 @@ public:
 
 int main(int argc, char const* argv[])
 {
-    //私有继承的访问规则举例2
+    //公有继承的访问规则举例
     Base op1;
     op1.set_xy(10, 20);
     op1.prt_xy();
