@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-09 18:00:57
- * @LastEditTime: 2020-08-10 19:04:10
+ * @LastEditTime: 2020-08-25 16:51:45
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/ex_3_4.cpp
@@ -54,14 +54,17 @@ int main()
     op2.setpoint(3, 4);
     i = op1.get_x();
     j = op1.get_y();
-    cout << "i = " << i << "\t"
-         << "j = " << j << "\t" << endl;
+    cout
+        << "i = " << i << "\t"
+        << "j = " << j << "\t" << endl;
     i = op2.get_x();
     j = op2.get_y();
-    cout << "i = " << i << "\t"
-         << "j = " << j << "\t" << endl;
+    cout
+        << "i = " << i << "\t"
+        << "j = " << j << "\t" << endl;
     i = op3.get_x();
     j = op3.get_y();
-    cout << "i = " << i << "\t"
-         << "j = " << j << "\t" << endl;
+    cout
+        << "i = " << i << "\t"
+        << "j = " << j << "\t" << endl;
 }

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 17:21:05
- * @LastEditTime: 2020-08-22 10:53:19
+ * @LastEditTime: 2020-08-25 16:47:52
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_37.cpp
@@ -33,8 +33,8 @@ A::~A()
 
 void A::show()
 {
-    cout << "x=" << x << endl
-         << "y=" << y << endl;
+    cout << "x=" << x << endl;
+    cout << "y=" << y << endl;
 }
 class B {
 private:

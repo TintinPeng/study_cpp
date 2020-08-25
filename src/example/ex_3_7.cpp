@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-11 14:19:11
- * @LastEditTime: 2020-08-11 14:28:16
+ * @LastEditTime: 2020-08-25 16:50:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/ex_3_7.cpp
@@ -34,9 +34,10 @@ A::~A()
 
 void A::print()
 {
-    cout << "x = " << x << "\t"
-         << "rx = " << rx << "\t"
-         << "pi = " << PI << endl;
+    cout
+        << "x = " << x << "\t"
+        << "rx = " << rx << "\t"
+        << "pi = " << PI << endl;
 }
 
 int main(int argc, char const* argv[])

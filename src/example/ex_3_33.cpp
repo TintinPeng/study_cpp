@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 08:54:19
- * @LastEditTime: 2020-08-21 10:55:32
+ * @LastEditTime: 2020-08-25 16:48:54
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_33.cpp
@@ -33,8 +33,9 @@ Girl::~Girl()
 
 void disp(Girl& x)
 {
-    cout << "女孩的姓名是:" << x.name << "\t"
-         << "年龄是:" << x.age << endl;
+    cout
+        << "女孩的姓名是:" << x.name << "\t"
+        << "年龄是:" << x.age << endl;
 }
 
 int main(int argc, char const* argv[])
