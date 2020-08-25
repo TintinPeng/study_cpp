@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-25 14:12:58
- * @LastEditTime: 2020-08-25 16:44:48
+ * @LastEditTime: 2020-08-25 20:34:45
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_4_1.cpp
@@ -42,8 +42,12 @@ public:
 
 int main(int argc, char const* argv[])
 {
-    Derived obj;
-    obj.set_xy(10, 20);
-    obj.prt_xy();
+    //私有继承访问举例1
+    Base obj1;
+    obj1.set_x(20);
+    obj1.prt_x();
+    Derived obj2;
+    obj2.set_xy(10, 20);
+    obj2.prt_xy();
     return 0;
 }
