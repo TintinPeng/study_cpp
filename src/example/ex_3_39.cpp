@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-24 13:31:53
- * @LastEditTime: 2020-08-24 13:35:47
+ * @LastEditTime: 2020-08-25 08:43:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_39.cpp
@@ -18,7 +18,10 @@ int add(const int& i, const int& j)
 
 int main(int argc, char const* argv[])
 {
+    //常引用作函数参数
     int a = 20, b = 30;
+    cout << a << "+" << b << "=" << add(a, b) << endl;
+    a = 80, b = 50;
     cout << a << "+" << b << "=" << add(a, b) << endl;
     return 0;
 }

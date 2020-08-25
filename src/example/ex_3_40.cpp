@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-24 13:56:35
- * @LastEditTime: 2020-08-24 14:22:43
+ * @LastEditTime: 2020-08-25 09:12:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_40.cpp
@@ -49,8 +49,8 @@ int main(int argc, char const* argv[])
      */
     // Sample const a(10, 20);
     Sample a(10, 20);
-    a.setVlaue(40);
+    a.setVlaue(40); //不允许更改常对象的数据成员
     a.m = 30;
-    a.display();
+    a.display(); //常对象不能调用普通成员函数
     return 0;
 }
