@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-26 11:23:49
- * @LastEditTime: 2020-08-26 11:36:20
+ * @LastEditTime: 2020-08-26 15:51:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_4_13.cpp
@@ -54,6 +54,7 @@ public:
 
 int main(int argc, char const* argv[])
 {
+    //多重继承情况下派生类的访问特性
     Z obj;
     obj.setX(3);
     obj.prtX();
