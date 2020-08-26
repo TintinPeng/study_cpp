@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-26 16:19:58
- * @LastEditTime: 2020-08-26 16:28:21
+ * @LastEditTime: 2020-08-26 19:13:45
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_4_15.cpp
@@ -55,6 +55,7 @@ public:
 
 int main(int argc, char const* argv[])
 {
+    //虚基类的引用
     Derived obj;
     return 0;
 }

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-26 16:19:58
- * @LastEditTime: 2020-08-26 17:10:33
+ * @LastEditTime: 2020-08-26 19:13:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_4_17.cpp
@@ -69,6 +69,7 @@ public:
 
 int main(int argc, char const* argv[])
 {
+    //虚基类的派生类的构造函数的执行顺序
     Derived obj(1, 2, 3, 4);
     return 0;
 }

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-26 15:52:03
- * @LastEditTime: 2020-08-26 16:06:10
+ * @LastEditTime: 2020-08-26 19:14:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_4_14.cpp
@@ -48,6 +48,7 @@ public:
 
 int main()
 {
+    //多重继承下派生类构造函数和析构函数的定义方法
     Z obj(1, 2, 3);
     cout << "x=" << obj.getX() << endl;
     cout << "y=" << obj.getY() << endl;

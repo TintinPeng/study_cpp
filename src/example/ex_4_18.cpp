@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-26 16:19:58
- * @LastEditTime: 2020-08-26 19:08:05
+ * @LastEditTime: 2020-08-26 19:09:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_4_18.cpp
@@ -81,6 +81,7 @@ void E_Student::print()
 
 int main(int argc, char const* argv[])
 {
+    //虚基类的简单应用举例
     E_Student E_Stu("张大", 'f', 34, "计算机", 95, "教务处", 3500);
     E_Stu.print();
     return 0;
