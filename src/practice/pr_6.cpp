@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-08-18 11:37:12
- * @LastEditTime: 2020-08-27 10:22:24
- * @LastEditors: your name
+ * @LastEditTime: 2020-08-27 10:27:29
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/practice/pr_6.cpp
  */
