@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-08-18 11:37:12
+ * @LastEditTime: 2020-08-27 10:22:24
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /study_cpp/src/practice/pr_6.cpp
+ */
 #include "iostream"
 int main(int argc, char const* argv[])
 {
