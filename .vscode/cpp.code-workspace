@@ -80,7 +80,7 @@
         "code-runner.saveAllFilesBeforeRun": true,
         "code-runner.saveFileBeforeRun": true,
         "code-runner.executorMap": {
-            "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt && rm -rf $dir$fileNameWithoutExt && cd ../.."
+            "cpp": "g++ $dir/$fileName -o $workspaceRoot/build/$fileNameWithoutExt && $workspaceRoot/build/$fileNameWithoutExt"
         },
         "C_Cpp.clang_format_fallbackStyle": "WebKit"
     }
