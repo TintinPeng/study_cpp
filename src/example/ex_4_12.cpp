@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-26 11:15:48
- * @LastEditTime: 2020-08-26 11:18:50
+ * @LastEditTime: 2020-08-31 00:24:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_4_12.cpp
@@ -12,32 +12,32 @@ using namespace std;
 
 class A {
 private:
-    int x;
+        int x;
 
 public:
-    A(int _x) { x = _x; }
-    ~A() { }
-    void print() { cout << "x=" << x << endl; }
+        A(int _x) { x = _x; }
+        ~A() { }
+        void print() { cout << "x=" << x << endl; }
 };
 
 class B : private A {
 private:
-    int y;
+        int y;
 
 public:
-    B(int _x, int _y)
-        : A(_x)
-    {
-        y = _y;
-    }
-    ~B() { }
-    using A::print;
+        B(int _x, int _y)
+                : A(_x)
+        {
+                y = _y;
+        }
+        ~B() { }
+        using A::print;
 };
 
 int main()
 {
-    //访问声明的应用
-    B obj(10, 20);
-    obj.print();
-    return 0;
+        //访问声明的应用
+        B obj(10, 20);
+        obj.print();
+        return 0;
 }

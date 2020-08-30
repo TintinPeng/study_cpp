@@ -12,51 +12,51 @@ using namespace std;
 
 class Base {
 protected:
-    int a;
+        int a;
 
 public:
-    Base()
-    {
-        a = 5;
-        cout << "Base a=" << a << endl;
-    }
-    ~Base() { }
+        Base()
+        {
+                a = 5;
+                cout << "Base a=" << a << endl;
+        }
+        ~Base() { }
 };
 
 class Base1 : virtual public Base {
 public:
-    Base1()
-    {
-        a = a + 10;
-        cout << "Base1 a=" << a << endl;
-    }
-    ~Base1() { }
+        Base1()
+        {
+                a = a + 10;
+                cout << "Base1 a=" << a << endl;
+        }
+        ~Base1() { }
 };
 
 class Base2 : virtual public Base {
 public:
-    Base2()
-    {
-        a = a + 20;
-        cout << "Base2 a=" << a << endl;
-    }
-    ~Base2() { }
+        Base2()
+        {
+                a = a + 20;
+                cout << "Base2 a=" << a << endl;
+        }
+        ~Base2() { }
 };
 
 class Derived : public Base1, public Base2 {
 public:
-    Derived()
-    {
-        cout << "Base1::a=" << Base1::a << endl;
-        cout << "Base2::a=" << Base2::a << endl;
-        cout << "Derived a=" << a << endl;
-    }
-    ~Derived() { }
+        Derived()
+        {
+                cout << "Base1::a=" << Base1::a << endl;
+                cout << "Base2::a=" << Base2::a << endl;
+                cout << "Derived a=" << a << endl;
+        }
+        ~Derived() { }
 };
 
 int main(int argc, char const* argv[])
 {
-    //虚基类的使用
-    Derived obj;
-    return 0;
+        //虚基类的使用
+        Derived obj;
+        return 0;
 }

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 17:21:05
- * @LastEditTime: 2020-08-25 16:47:52
+ * @LastEditTime: 2020-08-31 00:27:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_37.cpp
@@ -12,19 +12,19 @@ using namespace std;
 
 class A {
 private:
-    int x;
-    float y;
+        int x;
+        float y;
 
 public:
-    A(int _x, float _y);
-    ~A();
-    void show();
+        A(int _x, float _y);
+        ~A();
+        void show();
 };
 
 A::A(int _x, float _y)
 {
-    x = _x;
-    y = _y;
+        x = _x;
+        y = _y;
 }
 
 A::~A()
@@ -33,24 +33,24 @@ A::~A()
 
 void A::show()
 {
-    cout << "x=" << x << endl;
-    cout << "y=" << y << endl;
+        cout << "x=" << x << endl;
+        cout << "y=" << y << endl;
 }
 class B {
 private:
-    A a;
-    int z;
+        A a;
+        int z;
 
 public:
-    B(int _x, float _y, int _z);
-    ~B();
-    void show();
+        B(int _x, float _y, int _z);
+        ~B();
+        void show();
 };
 
 B::B(int _x, float _y, int _z)
-    : a(_x, _y)
+        : a(_x, _y)
 {
-    z = _z;
+        z = _z;
 }
 
 B::~B()
@@ -59,15 +59,15 @@ B::~B()
 
 void B::show()
 {
-    a.show();
-    cout << "z=" << z << endl;
+        a.show();
+        cout << "z=" << z << endl;
 }
 int main(int argc, char const* argv[])
 {
-    /*
+        /*
      * 对象成员的初始化
      */
-    B b(1, 2, 3);
-    b.show();
-    return 0;
+        B b(1, 2, 3);
+        b.show();
+        return 0;
 }

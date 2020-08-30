@@ -13,54 +13,54 @@ using namespace std;
 
 class X {
 private:
-    int x;
+        int x;
 
 public:
-    X() { }
-    ~X() { }
-    void setX(int _x) { x = _x; }
-    void prtX() { cout << "x=" << x << endl; }
+        X() { }
+        ~X() { }
+        void setX(int _x) { x = _x; }
+        void prtX() { cout << "x=" << x << endl; }
 };
 
 class Y {
 private:
-    int y;
+        int y;
 
 public:
-    Y() { }
-    ~Y() { }
-    void setY(int _y) { y = _y; }
-    void prtY() { cout << "y=" << y << endl; }
+        Y() { }
+        ~Y() { }
+        void setY(int _y) { y = _y; }
+        void prtY() { cout << "y=" << y << endl; }
 };
 
 class Z : public X, private Y {
 private:
-    int z;
+        int z;
 
 public:
-    Z() { }
-    ~Z() { }
-    void setZ(int _x, int _y)
-    {
-        z = _x;
-        setY(_y);
-    }
-    void prtZ()
-    {
-        prtY();
-        cout << "z=" << z << endl;
-    }
+        Z() { }
+        ~Z() { }
+        void setZ(int _x, int _y)
+        {
+                z = _x;
+                setY(_y);
+        }
+        void prtZ()
+        {
+                prtY();
+                cout << "z=" << z << endl;
+        }
 };
 
 int main(int argc, char const* argv[])
 {
-    //多重继承情况下派生类的访问特性
-    Z obj;
-    obj.setX(3);
-    obj.prtX();
-    //obj.setY(4);
-    //obj.prtY();
-    obj.setZ(6, 8);
-    obj.prtZ();
-    return 0;
+        //多重继承情况下派生类的访问特性
+        Z obj;
+        obj.setX(3);
+        obj.prtX();
+        //obj.setY(4);
+        //obj.prtY();
+        obj.setZ(6, 8);
+        obj.prtZ();
+        return 0;
 }

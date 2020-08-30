@@ -13,41 +13,41 @@ using namespace std;
 
 class complex {
 public:
-    double real, imag;
-    void init(double r, double i)
-    {
-        real = r;
-        imag = i;
-    }
-    double complex_abs()
-    {
-        double t;
-        t = real * real + imag * imag;
-        return sqrt(t);
-    }
-    void complex_print()
-    {
-        if (real != 0) {
-            if (imag > 0) {
-                cout << real << "+" << imag << "i的绝对值是" << complex_abs() << endl;
-            } else if (imag == 0) {
-                cout << real << "的绝对值是" << complex_abs() << endl;
-            } else if (imag < 0) {
-                cout << real << imag << "i的绝对值是" << complex_abs() << endl;
-            }
-        } else if (real == 0) {
-            cout << imag << "i的绝对值是" << complex_abs() << endl;
+        double real, imag;
+        void init(double r, double i)
+        {
+                real = r;
+                imag = i;
         }
-    }
+        double complex_abs()
+        {
+                double t;
+                t = real * real + imag * imag;
+                return sqrt(t);
+        }
+        void complex_print()
+        {
+                if (real != 0) {
+                        if (imag > 0) {
+                                cout << real << "+" << imag << "i的绝对值是" << complex_abs() << endl;
+                        } else if (imag == 0) {
+                                cout << real << "的绝对值是" << complex_abs() << endl;
+                        } else if (imag < 0) {
+                                cout << real << imag << "i的绝对值是" << complex_abs() << endl;
+                        }
+                } else if (real == 0) {
+                        cout << imag << "i的绝对值是" << complex_abs() << endl;
+                }
+        }
 };
 
 int main()
 {
-    /*
+        /*
      * 用类类型代替结构体类型
      * 类的默认访问权限是private
      */
-    complex num;
-    num.init(5, -3);
-    num.complex_print();
+        complex num;
+        num.init(5, -3);
+        num.complex_print();
 }

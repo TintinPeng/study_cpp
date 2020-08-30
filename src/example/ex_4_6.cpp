@@ -12,47 +12,47 @@ using namespace std;
 
 class Student {
 protected:
-    int number;
-    string name;
-    float score;
+        int number;
+        string name;
+        float score;
 
 public:
-    Student(int _number, string _name, float _score)
-    {
-        number = _number;
-        name = _name;
-        score = _score;
-    }
-    ~Student() { }
-    void printStuInfo()
-    {
-        cout << "number:" << number << endl;
-        cout << "name:" << name << endl;
-        cout << "score:" << score << endl;
-    }
+        Student(int _number, string _name, float _score)
+        {
+                number = _number;
+                name = _name;
+                score = _score;
+        }
+        ~Student() { }
+        void printStuInfo()
+        {
+                cout << "number:" << number << endl;
+                cout << "name:" << name << endl;
+                cout << "score:" << score << endl;
+        }
 };
 
 class UStuent : public Student {
 private:
-    string major;
+        string major;
 
 public:
-    UStuent(int _number, string _name, float _score, string _major)
-        : Student(_number, _name, _score)
-    {
-        major = _major;
-    }
-    void printUStuInfo()
-    {
-        printStuInfo();
-        cout << "majro:" << major << endl;
-    }
+        UStuent(int _number, string _name, float _score, string _major)
+                : Student(_number, _name, _score)
+        {
+                major = _major;
+        }
+        void printUStuInfo()
+        {
+                printStuInfo();
+                cout << "majro:" << major << endl;
+        }
 };
 
 int main(int argc, char const* argv[])
 {
-    //基类构造函数有参数,派生类的构造函数的使用
-    UStuent stu_1(28, "张志", 4.5, "信息安全");
-    stu_1.printUStuInfo();
-    return 0;
+        //基类构造函数有参数,派生类的构造函数的使用
+        UStuent stu_1(28, "张志", 4.5, "信息安全");
+        stu_1.printUStuInfo();
+        return 0;
 }

@@ -12,36 +12,36 @@ using namespace std;
 
 class Base {
 private:
-    int x;
+        int x;
 
 public:
-    Base(int i)
-    {
-        x = i;
-        cout << "基类Base构造函数" << endl;
-    }
-    ~Base() { cout << "基类Base析构函数" << endl; }
-    void show() { cout << "x=" << x << endl; }
+        Base(int i)
+        {
+                x = i;
+                cout << "基类Base构造函数" << endl;
+        }
+        ~Base() { cout << "基类Base析构函数" << endl; }
+        void show() { cout << "x=" << x << endl; }
 };
 
 class Derived : public Base {
 private:
-    Base d;
+        Base d;
 
 public:
-    Derived(int i)
-        : Base(i)
-        , d(i)
-    {
-        cout << "派生类Derived构造函数" << endl;
-    }
-    ~Derived() { cout << "派生类Derived析构函数" << endl; }
+        Derived(int i)
+                : Base(i)
+                , d(i)
+        {
+                cout << "派生类Derived构造函数" << endl;
+        }
+        ~Derived() { cout << "派生类Derived析构函数" << endl; }
 };
 
 int main(int argc, char const* argv[])
 {
-    //含有对象成员的派生类构造函数和析构函数的执行顺序
-    Derived obj(25);
-    obj.show();
-    return 0;
+        //含有对象成员的派生类构造函数和析构函数的执行顺序
+        Derived obj(25);
+        obj.show();
+        return 0;
 }

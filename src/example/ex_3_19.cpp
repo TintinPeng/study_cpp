@@ -13,23 +13,23 @@ using namespace std;
 
 class A {
 private:
-    int x;
+        int x;
 
 public:
-    A(int x1)
-    {
-        x = x1;
-    }
+        A(int x1)
+        {
+                x = x1;
+        }
 
-    ~A()
-    {
-    }
+        ~A()
+        {
+        }
 
-    void disp()
-    {
-        cout << "this=" << this << "   x=" << this->x << endl;
-    }
-    /*
+        void disp()
+        {
+                cout << "this=" << this << "   x=" << this->x << endl;
+        }
+        /*
      * void disp(*this)
      * {
      *      cout << "x=" << this->x << endl;
@@ -39,15 +39,15 @@ public:
 
 int main(int argc, char const* argv[])
 {
-    /*
+        /*
      * 显式this指针
      */
-    A a(1), b(2), c(2);
-    cout << "a:";
-    a.disp();
-    cout << "b:";
-    b.disp();
-    cout << "c:";
-    c.disp();
-    return 0;
+        A a(1), b(2), c(2);
+        cout << "a:";
+        a.disp();
+        cout << "b:";
+        b.disp();
+        cout << "c:";
+        c.disp();
+        return 0;
 }

@@ -12,49 +12,49 @@ using namespace std;
 
 class exe {
 private:
-    int x;
+        int x;
 
 public:
-    exe(/* args */)
-    {
-    }
+        exe(/* args */)
+        {
+        }
 
-    ~exe()
-    {
-    }
+        ~exe()
+        {
+        }
 
-    void set_a(int a)
-    {
-        x = a;
-    }
+        void set_a(int a)
+        {
+                x = a;
+        }
 
-    void show_a()
-    {
-        cout << x << endl;
-    }
+        void show_a()
+        {
+                cout << x << endl;
+        }
 };
 
 int main(int argc, char const* argv[])
 {
-    /*
+        /*
      * 对象指针的引用
      */
-    exe ob[2], *p;
-    ob[0].set_a(5);
-    ob[1].set_a(10);
+        exe ob[2], *p;
+        ob[0].set_a(5);
+        ob[1].set_a(10);
 
-    p = ob;
+        p = ob;
 
-    ob[0].show_a();
-    ob[1].show_a();
+        ob[0].show_a();
+        ob[1].show_a();
 
-    p->show_a();
-    (*p).show_a();
+        p->show_a();
+        (*p).show_a();
 
-    p++;
+        p++;
 
-    p->show_a();
-    (*p).show_a();
+        p->show_a();
+        (*p).show_a();
 
-    return 0;
+        return 0;
 }

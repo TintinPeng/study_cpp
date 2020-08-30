@@ -12,32 +12,32 @@ using namespace std;
 
 class A {
 private:
-    int x;
+        int x;
 
 public:
-    A(int _x) { x = _x; }
-    ~A() { }
-    void print() { cout << "x=" << x << endl; }
+        A(int _x) { x = _x; }
+        ~A() { }
+        void print() { cout << "x=" << x << endl; }
 };
 
 class B : private A {
 private:
-    int y;
+        int y;
 
 public:
-    B(int _x, int _y)
-        : A(_x)
-    {
-        y = _y;
-    }
-    ~B() { }
-    void print() { A::print(); }
+        B(int _x, int _y)
+                : A(_x)
+        {
+                y = _y;
+        }
+        ~B() { }
+        void print() { A::print(); }
 };
 
 int main()
 {
-    //访问声明的引例
-    B obj(10, 20);
-    obj.print();
-    return 0;
+        //访问声明的引例
+        B obj(10, 20);
+        obj.print();
+        return 0;
 }

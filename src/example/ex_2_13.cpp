@@ -11,9 +11,9 @@ using namespace std;
 int avar = 10;
 int main()
 {
-    /*
+        /*
      * 全局变量和局部变量同名情况
      */
-    int avar = 25;
-    cout << "avar = " << avar << endl;
+        int avar = 25;
+        cout << "avar = " << avar << endl;
 }

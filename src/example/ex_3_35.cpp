@@ -15,19 +15,19 @@ class Boy;
 
 class Boy {
 private:
-    string name;
-    int age;
+        string name;
+        int age;
 
 public:
-    Boy(string, int);
-    ~Boy();
-    void prdata(const Girl&);
+        Boy(string, int);
+        ~Boy();
+        void prdata(const Girl&);
 };
 
 Boy::Boy(string N, int A)
 {
-    name = N;
-    age = A;
+        name = N;
+        age = A;
 }
 
 Boy::~Boy()
@@ -36,19 +36,19 @@ Boy::~Boy()
 
 class Girl {
 private:
-    string name;
-    int age;
+        string name;
+        int age;
 
 public:
-    Girl(string, int);
-    ~Girl();
-    friend void Boy::prdata(const Girl&);
+        Girl(string, int);
+        ~Girl();
+        friend void Boy::prdata(const Girl&);
 };
 
 Girl::Girl(string N, int A)
 {
-    name = N;
-    age = A;
+        name = N;
+        age = A;
 }
 
 Girl::~Girl()
@@ -57,31 +57,31 @@ Girl::~Girl()
 
 void Boy::prdata(const Girl& G)
 {
-    cout << "女孩的姓名:" << G.name << endl;
-    cout << "女孩的年龄:" << G.age << endl;
-    cout << "男孩的姓名:" << name << endl;
-    cout << "男孩的年龄:" << age << endl;
+        cout << "女孩的姓名:" << G.name << endl;
+        cout << "女孩的年龄:" << G.age << endl;
+        cout << "男孩的姓名:" << name << endl;
+        cout << "男孩的年龄:" << age << endl;
 }
 
 int main(int argc, char const* argv[])
 {
-    /*
+        /*
      * 一个类的函数成员同时为另一个类的友元函数
      */
-    Girl G[3] = {
-        Girl("小刘", 18),
-        Girl("小李", 18),
-        Girl("小白", 18)
-    };
-    Boy B[3] = {
-        Boy("老刘", 38),
-        Boy("老李", 38),
-        Boy("老白", 38)
-    };
+        Girl G[3] = {
+                Girl("小刘", 18),
+                Girl("小李", 18),
+                Girl("小白", 18)
+        };
+        Boy B[3] = {
+                Boy("老刘", 38),
+                Boy("老李", 38),
+                Boy("老白", 38)
+        };
 
-    for (int i = 0; i < 3; i++) {
-        B[i].prdata(G[i]);
-    }
+        for (int i = 0; i < 3; i++) {
+                B[i].prdata(G[i]);
+        }
 
-    return 0;
+        return 0;
 }

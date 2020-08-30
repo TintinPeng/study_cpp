@@ -11,12 +11,12 @@ using namespace std;
 
 int main()
 {
-    /*
+        /*
      * 计算两个整数之和
      */
-    int x, y, sum;
-    cout << "请输入两个数" << endl;
-    cin >> x >> y;
-    sum = x + y;
-    cout << "x + y = " << sum << endl;
+        int x, y, sum;
+        cout << "请输入两个数" << endl;
+        cin >> x >> y;
+        sum = x + y;
+        cout << "x + y = " << sum << endl;
 }

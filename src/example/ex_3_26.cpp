@@ -12,35 +12,35 @@ using namespace std;
 
 class Point {
 private:
-    int x, y;
+        int x, y;
 
 public:
-    Point(int a, int b)
-    {
-        x = a, y = b;
-    }
+        Point(int a, int b)
+        {
+                x = a, y = b;
+        }
 
-    // Point(const Point& p)
-    // {
-    //     x = 2 * p.x, y = 2 * p.y;
-    // }
+        // Point(const Point& p)
+        // {
+        //     x = 2 * p.x, y = 2 * p.y;
+        // }
 
-    ~Point() { }
+        ~Point() { }
 
-    void print()
-    {
-        cout << x << "\t" << y << endl;
-    }
+        void print()
+        {
+                cout << x << "\t" << y << endl;
+        }
 };
 
 int main(int argc, char const* argv[])
 {
-    /* 
+        /* 
      * 默认拷贝构造函数使用
      */
-    Point p1(30, 40), p2(p1), p3 = p1;
-    p1.print();
-    p2.print();
-    p3.print();
-    return 0;
+        Point p1(30, 40), p2(p1), p3 = p1;
+        p1.print();
+        p2.print();
+        p3.print();
+        return 0;
 }

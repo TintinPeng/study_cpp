@@ -10,12 +10,12 @@
 using namespace std;
 class A {
 private:
-    int mem1;
-    int mem2;
+        int mem1;
+        int mem2;
 
 public:
-    A(int i);
-    ~A();
+        A(int i);
+        ~A();
 };
 
 // A::A(int i)
@@ -27,11 +27,11 @@ public:
 // }
 
 A::A(int i)
-    : mem1(i)
-    , mem2(mem1 + 1)
+        : mem1(i)
+        , mem2(mem1 + 1)
 {
-    cout << "mem1:" << mem1 << endl;
-    cout << "mem2:" << mem2 << endl;
+        cout << "mem1:" << mem1 << endl;
+        cout << "mem2:" << mem2 << endl;
 }
 
 A::~A()
@@ -40,10 +40,10 @@ A::~A()
 
 int main(int argc, char const* argv[])
 {
-    /* 
+        /* 
      * 用初始化成员列表对数据成员进行初始化
      * 数据成员是按照它们在类中的顺序进行初始化的
      */
-    A a(15);
-    return 0;
+        A a(15);
+        return 0;
 }

@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-08-24 12:50:48
- * @LastEditTime: 2020-08-24 13:00:12
- * @LastEditors: your name
+ * @LastEditTime: 2020-08-31 00:23:59
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/leetcode/2.两数相加.cpp
  */
@@ -23,10 +23,10 @@
  */
 
 using namespace std;
-class Solution {
-public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
-    {
-    }
-};
+// class Solution {
+// public:
+//         ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
+//         {
+//         }
+// };
 // @lc code=end
