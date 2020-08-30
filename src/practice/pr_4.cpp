@@ -13,20 +13,20 @@ using namespace std;
 
 int main(int argc, char const* argv[])
 {
-    double x = 12.345;
-    cout << "默认状态:" << x << endl;
-    cout << endl;
-    for (int i = 0; i < 7; i++) {
-        cout << "保留小数点" << i << "位:";
-        cout.setf(ios::fixed);
-        cout << setprecision(i);
-        cout << x << endl;
-    }
-    cout << endl;
-    cout << "恢复默认状态:";
-    cout.unsetf(ios::fixed);
-    cout << setprecision(6) << x << endl;
-    return 0;
+        double x = 12.345;
+        cout << "默认状态:" << x << endl;
+        cout << endl;
+        for (int i = 0; i < 7; i++) {
+                cout << "保留小数点" << i << "位:";
+                cout.setf(ios::fixed);
+                cout << setprecision(i);
+                cout << x << endl;
+        }
+        cout << endl;
+        cout << "恢复默认状态:";
+        cout.unsetf(ios::fixed);
+        cout << setprecision(6) << x << endl;
+        return 0;
 }
 
 /* 

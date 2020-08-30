@@ -12,19 +12,19 @@ using namespace std;
 
 int main(int argc, char const* argv[])
 {
-    /* 
+        /* 
      * a++和++a的区别
      */
-    int a, b;
-    // a = 0;
-    // a++;
-    // ++a;
-    // cout << a << endl;
-    a = 0;
-    b = ++a;
-    cout << b << endl;
-    a = 0;
-    b = a++;
-    cout << b << endl;
-    return 0;
+        int a, b;
+        // a = 0;
+        // a++;
+        // ++a;
+        // cout << a << endl;
+        a = 0;
+        b = ++a;
+        cout << b << endl;
+        a = 0;
+        b = a++;
+        cout << b << endl;
+        return 0;
 }
