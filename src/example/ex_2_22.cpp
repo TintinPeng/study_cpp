@@ -1,7 +1,7 @@
 /*
  * @Author: tintin
  * @Date: 2020-07-31 10:26:57
- * @LastEditTime: 2020-08-10 19:05:59
+ * @LastEditTime: 2020-08-31 01:31:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_2_22.cpp
@@ -19,8 +19,8 @@ int& index(int i)
 int main()
 {
         /*
-     * 使用引用返回函数值
-     */
+         * 使用引用返回函数值
+         */
         index(2) = 25;
         cout << index(2) << endl;
         for (int i = 0; i < 5; i++) {

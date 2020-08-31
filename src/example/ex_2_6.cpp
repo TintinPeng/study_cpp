@@ -1,7 +1,7 @@
 /*
  * @Author: tintin
  * @Date: 2020-08-01 09:07:40
- * @LastEditTime: 2020-08-25 09:11:38
+ * @LastEditTime: 2020-08-31 00:33:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_2_6.cpp
@@ -13,8 +13,8 @@ using namespace std;
 int main()
 {
         /*
-     * 用const取代#define
-     */
+         * 用const取代#define
+         */
         int a = 1;
         int const T1 = a + a;
         int const T2 = T1 - T1;

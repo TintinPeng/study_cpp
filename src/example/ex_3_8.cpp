@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-11 16:09:15
- * @LastEditTime: 2020-08-11 16:20:50
+ * @LastEditTime: 2020-08-31 10:30:38
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/ex_3_8.cpp
@@ -40,10 +40,8 @@ A::~A()
 
 int main(int argc, char const* argv[])
 {
-        /* 
-     * 用初始化成员列表对数据成员进行初始化
-     * 数据成员是按照它们在类中的顺序进行初始化的
-     */
+        // 用初始化成员列表对数据成员进行初始化
+        // 数据成员是按照它们在类中的顺序进行初始化的
         A a(15);
         return 0;
 }

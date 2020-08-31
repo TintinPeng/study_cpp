@@ -1,7 +1,7 @@
 /*
  * @Author: tintin
  * @Date: 2020-07-31 16:06:50
- * @LastEditTime: 2020-07-31 16:10:32
+ * @LastEditTime: 2020-08-31 01:32:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_3_3.cpp
@@ -48,9 +48,9 @@ public:
 int main()
 {
         /*
-     * 含有公有成员和私有成员的complex类
-     * 
-     */
+         * 含有公有成员和私有成员的complex类
+         * 
+         */
         complex num;
         num.init(5, -3);
         num.complex_print();

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 10:54:17
- * @LastEditTime: 2020-08-25 16:48:20
+ * @LastEditTime: 2020-08-31 10:22:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_36.cpp
@@ -17,7 +17,7 @@ class Girl;
 class Boy {
 private:
         string name;
-        int age;
+        int    age;
 
 public:
         Boy(string, int);
@@ -38,7 +38,7 @@ Boy::~Boy()
 class Girl {
 private:
         string name;
-        int age;
+        int    age;
 
 public:
         Girl(string, int);
@@ -58,20 +58,17 @@ Girl::~Girl()
 
 void Boy::disp(const Girl& G)
 {
-        cout
-                << "男孩的姓名:" << name << "   "
-                << "男孩的年龄:" << age << endl;
-
-        cout
-                << "女孩的姓名:" << G.name << "   "
-                << "女孩的年龄:" << G.age << endl;
+        cout << "男孩的姓名:" << name << "   "
+             << "男孩的年龄:" << age << endl;
+        cout << "女孩的姓名:" << G.name << "   "
+             << "女孩的年龄:" << G.age << endl;
 }
 
 int main(int argc, char const* argv[])
 {
         /*
-     * 友元类
-     */
+         * 友元类
+         */
         Girl G[3] = {
                 Girl("小刘", 18),
                 Girl("小李", 18),

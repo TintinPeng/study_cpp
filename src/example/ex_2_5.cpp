@@ -13,8 +13,8 @@ using namespace std;
 int main()
 {
         /*
-     * #define的不安全性
-     */
+         * #define的不安全性
+         */
         int a = 1;
 #define T1 a + a
 #define T2 T1 - T1

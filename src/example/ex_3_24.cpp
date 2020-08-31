@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-12 15:17:10
- * @LastEditTime: 2020-08-12 15:58:33
+ * @LastEditTime: 2020-08-31 10:19:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_24.cpp
@@ -30,8 +30,8 @@ public:
 int main(int argc, char const* argv[])
 {
         /* 
-     * 对象赋值语句示例
-     */
+         * 对象赋值语句示例
+         */
         A ob1, ob2;
         ob1.set(1, 70);
         ob2 = ob1;

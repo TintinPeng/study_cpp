@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-12 17:01:20
- * @LastEditTime: 2020-08-21 17:08:07
+ * @LastEditTime: 2020-08-31 10:20:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_29.cpp
@@ -11,10 +11,10 @@
 using namespace std;
 class Student {
 private:
-        string name;
-        string stu_no;
-        float score;
-        static int count;
+        string       name;
+        string       stu_no;
+        float        score;
+        static int   count;
         static float sum;
         static float ave;
 
@@ -24,7 +24,7 @@ public:
         void show_student();
         void show_summary();
 };
-int Student::count = 0;
+int   Student::count = 0;
 float Student::sum = 0;
 float Student::ave = 0;
 
@@ -61,9 +61,9 @@ void Student::show_summary()
 int main(int argc, char const* argv[])
 {
         /*
-     * 静态数据成员的使用
-     * 静态数据成员应该在类外定义
-     */
+         * 静态数据成员的使用
+         * 静态数据成员应该在类外定义
+         */
         Student stu0("李明", "00001", 90);
         stu0.show_student();
         stu0.show_summary();

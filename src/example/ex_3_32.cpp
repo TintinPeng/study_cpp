@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-18 09:27:28
- * @LastEditTime: 2020-08-18 15:16:13
+ * @LastEditTime: 2020-08-31 10:21:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_32.cpp
@@ -12,7 +12,7 @@ using namespace std;
 
 class small_cat {
 private:
-        double weight;
+        double        weight;
         static double total_weight;
         static double total_number;
 
@@ -50,9 +50,9 @@ double small_cat::total_number = 0;
 int main(int argc, char const* argv[])
 {
         /*
-     * 
-     * 静态成员函数访问静态数据成员
-     */
+         * 
+         * 静态成员函数访问静态数据成员
+         */
         small_cat w1(0.5), w2(0.8), w3(0.7);
         small_cat::display(w1);
         small_cat::display(w2);

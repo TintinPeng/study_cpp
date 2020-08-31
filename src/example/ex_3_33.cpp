@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 08:54:19
- * @LastEditTime: 2020-08-31 00:27:34
+ * @LastEditTime: 2020-08-31 10:21:13
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_33.cpp
@@ -13,7 +13,7 @@ using namespace std;
 class Girl {
 private:
         string name;
-        int age;
+        int    age;
 
 public:
         Girl(string n, int d);
@@ -41,8 +41,8 @@ void disp(Girl& x)
 int main(int argc, char const* argv[])
 {
         /*
-     * 友元函数的使用
-     */
+         * 友元函数的使用
+         */
         Girl g1("陈晓丽", 18);
         disp(g1);
         return 0;

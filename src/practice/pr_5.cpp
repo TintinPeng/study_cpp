@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-18 08:11:35
- * @LastEditTime: 2020-08-31 00:23:04
+ * @LastEditTime: 2020-08-31 10:25:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/practice/pr_5.cpp
@@ -23,8 +23,7 @@ int main(int argc, char const* argv[])
                 }
         }
 found:
-        cout
-                << "jump out"
-                << "\t" << x << endl;
+        cout << "jump out"
+             << "\t" << x << endl;
         return 0;
 }

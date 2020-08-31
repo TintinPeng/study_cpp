@@ -84,7 +84,8 @@
                 },
                 "C_Cpp.clang_format_fallbackStyle": "WebKit",
                 "prettier.tabWidth": 8,
-                "C_Cpp.clang_format_path": "/usr/bin/clang-format"
+                "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+                "indentRainbow.ignoreErrorLanguages": ["cpp", "markdown"]
                 // "C_Cpp.clang_format_path": "$HOME/Workspaces/study_cpp/.clang-format"
         }
 }

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-27 09:22:21
- * @LastEditTime: 2020-08-30 23:23:33
+ * @LastEditTime: 2020-08-31 10:27:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/practice/pr_8.cpp
@@ -17,7 +17,7 @@ bool IsEven(int number)
 
 int main(int argc, char const* argv[])
 {
-        int a = 11;
+        int  a = 11;
         bool b;
         b = IsEven(a);
         if (b == true) {

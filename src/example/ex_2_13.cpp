@@ -1,7 +1,7 @@
 /*
  * @Author: tinitn
  * @Date: 2020-07-31 09:58:06
- * @LastEditTime: 2020-08-01 10:06:45
+ * @LastEditTime: 2020-08-31 00:36:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_2_14.cpp
@@ -12,8 +12,8 @@ int avar = 10;
 int main()
 {
         /*
-     * 全局变量和局部变量同名情况
-     */
+         * 全局变量和局部变量同名情况
+         */
         int avar = 25;
         cout << "avar = " << avar << endl;
 }

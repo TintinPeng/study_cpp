@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-22 10:53:24
- * @LastEditTime: 2020-08-31 00:27:09
+ * @LastEditTime: 2020-08-31 10:22:49
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_38.cpp
@@ -44,7 +44,7 @@ class Student {
 private:
         string name;
         string stu_no;
-        Score _score;
+        Score  _score;
 
 public:
         Student(string _name, string _stu_no, float s1, float s2, float s3);
@@ -73,8 +73,8 @@ void Student::show()
 int main(int argc, char const* argv[])
 {
         /*
-     * 对象成员的初始化
-     */
+         * 对象成员的初始化
+         */
         Student stu1("李小明", "123456", 98, 87, 46);
         stu1.show();
         cout << endl;

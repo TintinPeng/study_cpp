@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-11 16:21:33
- * @LastEditTime: 2020-08-11 16:57:11
+ * @LastEditTime: 2020-08-31 01:52:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/ex_3_9.cpp
@@ -48,9 +48,9 @@ inline void Date::showDate()
 
 int main(int argc, char const* argv[])
 {
-        /*
-     * 构造函数重载的应用
-     */
+
+        // 构造函数重载的应用
+
         Date date1, date2(2020, 8, 11);
         cout << "date1是:";
         date1.showDate();

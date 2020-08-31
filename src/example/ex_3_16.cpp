@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-08-12 10:18:21
- * @LastEditTime: 2020-08-12 10:20:06
- * @LastEditors: your name
+ * @LastEditTime: 2020-08-31 01:39:17
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_16.cpp
  */
@@ -53,10 +53,7 @@ public:
 
 int main(int argc, char const* argv[])
 {
-        /* 
-     * 用只有一个参数的构造函数给对象数组赋值
-     * 
-     */
+        //用只有一个参数的构造函数给对象数组赋值
         complex num[3] = {
                 complex(1.2, 5),
                 complex(3, 4),

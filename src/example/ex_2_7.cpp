@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2020-08-01 09:37:06
- * @LastEditTime: 2020-08-01 09:44:40
- * @LastEditors: your name
+ * @LastEditTime: 2020-08-31 00:32:47
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_2_7.cpp
  */
@@ -15,8 +15,8 @@ int add(int, int);
 int main()
 {
         /*
-     * 函数原型
-     */
+         * 函数原型
+         */
         int x = 1, y = 2;
         int z;
         z = add(x, y);

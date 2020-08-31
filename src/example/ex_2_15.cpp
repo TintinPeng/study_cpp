@@ -1,7 +1,7 @@
 /*
  * @Author: tinitn
  * @Date: 2020-07-31 09:34:47
- * @LastEditTime: 2020-07-31 10:56:12
+ * @LastEditTime: 2020-08-31 01:29:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_2_15.cpp
@@ -11,8 +11,8 @@ using namespace std;
 int main()
 {
         /*
-     * 使用new和delete的简单例子
-     */
+         * 使用new和delete的简单例子
+         */
         int *ptr1, *ptr2;
         ptr1 = new int;
         ptr2 = new int[10];

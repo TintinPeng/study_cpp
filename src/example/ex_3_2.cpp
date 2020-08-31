@@ -1,7 +1,7 @@
 /*
  * @Author: tintin
  * @Date: 2020-07-31 15:58:32
- * @LastEditTime: 2020-08-10 19:05:40
+ * @LastEditTime: 2020-08-31 01:32:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_3_2.cpp
@@ -44,9 +44,9 @@ public:
 int main()
 {
         /*
-     * 用类类型代替结构体类型
-     * 类的默认访问权限是private
-     */
+         * 用类类型代替结构体类型
+         * 类的默认访问权限是private
+         */
         complex num;
         num.init(5, -3);
         num.complex_print();

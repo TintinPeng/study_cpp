@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-12 16:05:56
- * @LastEditTime: 2020-08-31 00:27:48
+ * @LastEditTime: 2020-08-31 10:20:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_27.cpp
@@ -51,8 +51,8 @@ Point fun2() //函数的返回值是类的对象时
 int main(int argc, char const* argv[])
 {
         /* 
-     * 使用拷贝构造函数的三种情况
-     */
+         * 使用拷贝构造函数的三种情况
+         */
         Point p1(30, 40); //用类的一个对象去初始化类的另外一个对象
         p1.print();
         Point p2(p1);

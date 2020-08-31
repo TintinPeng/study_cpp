@@ -1,7 +1,7 @@
 /*
  * @Author: tintin
  * @Date: 2020-07-31 15:28:09
- * @LastEditTime: 2020-08-31 00:28:45
+ * @LastEditTime: 2020-08-31 01:31:45
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/example/ex_3_1.cpp
@@ -43,9 +43,9 @@ struct complex {
 int main()
 {
         /*
-     * 用扩充的结构体类型求复数的绝对值
-     * 结构体的默认访问权限是public
-     */
+         * 用扩充的结构体类型求复数的绝对值
+         * 结构体的默认访问权限是public
+         */
         complex A;
         A.init(2, -3);
         A.complex_print();

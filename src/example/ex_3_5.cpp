@@ -53,8 +53,8 @@ public:
 int main(int argc, char const* argv[])
 {
         /* 
-     * 采用构造函数给数据成员赋初值
-     */
+         * 采用构造函数给数据成员赋初值
+         */
         complex num(-3, 4);
         num.complex_abs();
         num.complex_print();

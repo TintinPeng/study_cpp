@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-17 16:54:20
- * @LastEditTime: 2020-08-17 19:00:54
+ * @LastEditTime: 2020-08-31 10:25:42
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/practice/pr_4.cpp
@@ -30,27 +30,27 @@ int main(int argc, char const* argv[])
 }
 
 /* 
-     * 保留小数位数
-     * //第一种写法
-	 * cout<<setiosflags(ios::fixed)<<setprecision(2);
-     * //第二种写法
-     * cout.setf(ios::fixed);
-     * cout<<setprecision(2);
-     * //第三种写法
-     * cout<<fixed<<setprecision(2);
-     * 
-     * setprecision(n) 功能：控制浮点数显示的有效数字个数
-     * 
-     */
+ * 保留小数位数
+ * //第一种写法
+ * cout<<setiosflags(ios::fixed)<<setprecision(2);
+ * //第二种写法
+ * cout.setf(ios::fixed);
+ * cout<<setprecision(2);
+ * //第三种写法
+ * cout<<fixed<<setprecision(2);
+ * 
+ * setprecision(n) 功能：控制浮点数显示的有效数字个数
+ * 
+ */
 // int a = 350;
 // float b = 1.4;
 // double c = 1.5;
 // cout << fixed << setprecision(2);
 // cout << a << "\t" << b << "\t" << c << endl;
 /*
-     * 
-     * 补充一小点showpoint
-     */
+ * 
+ * 补充一小点showpoint
+ */
 // double s = 12.345;
 // // cout << fixed;
 // cout << s << endl; //输出原数12.345

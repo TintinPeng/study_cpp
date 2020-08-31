@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-12 15:29:41
- * @LastEditTime: 2020-08-31 00:28:24
+ * @LastEditTime: 2020-08-31 10:19:41
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_25.cpp
@@ -35,8 +35,8 @@ public:
 int main(int argc, char const* argv[])
 {
         /* 
-     * 自定义拷贝构造函数使用
-     */
+         * 自定义拷贝构造函数使用
+         */
         Point p1(30, 40), p2(p1);
         p1.print();
         p2.print();

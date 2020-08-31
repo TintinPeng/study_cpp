@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 09:04:36
- * @LastEditTime: 2020-08-21 10:56:57
+ * @LastEditTime: 2020-08-31 10:21:50
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_34.cpp
@@ -16,7 +16,7 @@ class Boy;
 class Boy {
 private:
         string name;
-        int age;
+        int    age;
 
 public:
         Boy(string, int);
@@ -37,7 +37,7 @@ Boy::~Boy()
 class Girl {
 private:
         string name;
-        int age;
+        int    age;
 
 public:
         Girl(string, int);
@@ -66,8 +66,8 @@ void Boy::prdata(const Girl& G)
 int main(int argc, char const* argv[])
 {
         /*
-     * 一个类的函数成员同时为另一个类的友元函数
-     */
+         * 一个类的函数成员同时为另一个类的友元函数
+         */
         Girl G[3] = {
                 Girl("小刘", 18),
                 Girl("小李", 18),

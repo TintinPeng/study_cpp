@@ -40,9 +40,9 @@ void sqr_it(Tr ob)
 int main(int argc, char const* argv[])
 {
         /* 
-     * 使用对象作为函数参数;
-     * 本例函数sqr_it中对对象的任何修改均不影响函数本身
-     */
+         * 使用对象作为函数参数;
+         * 本例函数sqr_it中对对象的任何修改均不影响函数本身
+         */
         Tr ob(10);
         cout << "在调用函数sqr_it之前ob的数据成员i的值" << ob.get_i() << endl;
         sqr_it(ob);

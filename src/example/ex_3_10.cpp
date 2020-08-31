@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-11 17:00:25
- * @LastEditTime: 2020-08-11 17:08:01
+ * @LastEditTime: 2020-08-31 01:52:45
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/ex_3_10.cpp
@@ -17,8 +17,8 @@ public:
         Location(int m, int n);
         ~Location();
         void init(int initX, int initY);
-        int GetX();
-        int GetY();
+        int  GetX();
+        int  GetY();
 };
 
 Location::Location(int m, int n)
@@ -48,8 +48,8 @@ int Location::GetY()
 int main(int argc, char const* argv[])
 {
         /*
-     * 有构造函数时,应该按照构造函数的数据格式声明对象
-     */
+         * 有构造函数时,应该按照构造函数的数据格式声明对象
+         */
         Location A3(0, 0);
         A3.init(785, 900);
         cout << A3.GetX() << "\t" << A3.GetY() << endl;

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-21 17:21:05
- * @LastEditTime: 2020-08-31 00:27:23
+ * @LastEditTime: 2020-08-31 10:22:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_37.cpp
@@ -12,7 +12,7 @@ using namespace std;
 
 class A {
 private:
-        int x;
+        int   x;
         float y;
 
 public:
@@ -38,7 +38,7 @@ void A::show()
 }
 class B {
 private:
-        A a;
+        A   a;
         int z;
 
 public:
@@ -65,8 +65,8 @@ void B::show()
 int main(int argc, char const* argv[])
 {
         /*
-     * 对象成员的初始化
-     */
+         * 对象成员的初始化
+         */
         B b(1, 2, 3);
         b.show();
         return 0;

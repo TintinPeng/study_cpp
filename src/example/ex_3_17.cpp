@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-12 10:22:00
- * @LastEditTime: 2020-08-12 10:33:16
+ * @LastEditTime: 2020-08-31 01:55:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_17.cpp
@@ -15,13 +15,9 @@ private:
         int x;
 
 public:
-        exe(/* args */)
-        {
-        }
+        exe() { }
 
-        ~exe()
-        {
-        }
+        ~exe() { }
 
         void set_a(int a)
         {
@@ -37,8 +33,8 @@ public:
 int main(int argc, char const* argv[])
 {
         /*
-     * 对象指针的引用
-     */
+         * 对象指针的引用
+         */
         exe ob[2], *p;
         ob[0].set_a(5);
         ob[1].set_a(10);

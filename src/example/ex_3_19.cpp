@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-12 10:43:37
- * @LastEditTime: 2020-08-12 10:46:24
+ * @LastEditTime: 2020-08-31 01:56:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_3_19.cpp
@@ -29,19 +29,17 @@ public:
         {
                 cout << "this=" << this << "   x=" << this->x << endl;
         }
-        /*
-     * void disp(*this)
-     * {
-     *      cout << "x=" << this->x << endl;
-     * }
-     */
+        // void disp(*this)
+        // {
+        //         cout << "x=" << this->x << endl;
+        // }
 };
 
 int main(int argc, char const* argv[])
 {
         /*
-     * 显式this指针
-     */
+         * 显式this指针
+         */
         A a(1), b(2), c(2);
         cout << "a:";
         a.disp();

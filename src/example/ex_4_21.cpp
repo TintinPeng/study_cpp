@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-27 16:35:41
- * @LastEditTime: 2020-08-31 00:17:47
+ * @LastEditTime: 2020-08-31 10:34:19
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_4_21.cpp
@@ -14,8 +14,8 @@ using namespace std;
 class Data_rec {
 protected:
         string name;
-        char sex;
-        int age;
+        char   sex;
+        int    age;
 
 public:
         Data_rec(string _name, char _sex, int _age)
@@ -101,7 +101,9 @@ public:
 
 class E_Student : public Employee, public Student {
 public:
-        E_Student(string _name, char _sex, int _age, string _major, double _score, string _dept, double _salary)
+        E_Student(string _name, char _sex, int _age,
+                string _major, double _score,
+                string _dept, double _salary)
                 : Data_rec(_name, _sex, _age)
                 , Student(_name, _sex, _age, _major, _score)
                 , Employee(_name, _sex, _age, _dept, _salary)
