@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-27 11:03:42
- * @LastEditTime: 2020-08-31 00:24:21
+ * @LastEditTime: 2020-09-06 19:55:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_4_20.cpp
@@ -15,8 +15,8 @@ private:
         /* data */
 
 protected:
-        int floors;
-        int rooms;
+        int    floors;
+        int    rooms;
         double j_area;
 
 public:
@@ -122,9 +122,9 @@ public:
 
 int main(int argc, char const* argv[])
 {
-        Home_Arch home(1, 100, 12000, 3, 1, 1, 1);
+        Home_Arch       home(1, 100, 12000, 3, 1, 1, 1);
         Office_Building office(4, 80, 3500, 40, 12);
-        Hospital hospital(10, 300, 25000, 200, 20);
+        Hospital        hospital(10, 300, 25000, 200, 20);
         home.show();
         office.show();
         hospital.show();
