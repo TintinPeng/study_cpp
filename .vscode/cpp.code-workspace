@@ -80,7 +80,8 @@
                 "code-runner.saveAllFilesBeforeRun": true,
                 "code-runner.saveFileBeforeRun": true,
                 "code-runner.executorMap": {
-                        "cpp": "g++ $dir/$fileName -o $workspaceRoot/build/$fileNameWithoutExt && $workspaceRoot/build/$fileNameWithoutExt"
+                        // "cpp": "g++ $dir/$fileName -include $workspaceRoot/inc/tintin.hpp -o $workspaceRoot/build/$fileNameWithoutExt && $workspaceRoot/build/$fileNameWithoutExt"
+                        "cpp": "g++ -g $dir/$fileName -o $workspaceRoot/build/$fileNameWithoutExt && $workspaceRoot/build/$fileNameWithoutExt"
                 },
                 "C_Cpp.clang_format_fallbackStyle": "WebKit",
                 "prettier.tabWidth": 8,

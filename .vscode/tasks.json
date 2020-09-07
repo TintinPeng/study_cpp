@@ -1,21 +1,23 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "type": "shell",
-            "label": "C/C++: g++ build active file",
-            "command": "/usr/bin/g++",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${workspaceFolder}/build/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": ["$gcc"],
-            "group": "build"
-        }
-    ]
+        "version": "2.0.0",
+        "tasks": [
+                {
+                        "type": "shell",
+                        "label": "C/C++: g++ build active file",
+                        "command": "/usr/bin/g++",
+                        "args": [
+                                // "-include",
+                                // "${workspaceFolder}/inc/tintin.hpp",
+                                "-g",
+                                "${file}",
+                                "-o",
+                                "${workspaceFolder}/build/${fileBasenameNoExtension}"
+                        ],
+                        "options": {
+                                "cwd": "${workspaceFolder}"
+                        },
+                        "problemMatcher": ["$gcc"],
+                        "group": "build"
+                }
+        ]
 }
