@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-09-07 08:30:43
- * @LastEditTime: 2020-09-07 17:17:45
+ * @LastEditTime: 2020-09-08 16:21:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_5_1.cpp
@@ -13,8 +13,8 @@ using namespace std;
 class Complex {
 public:
         double real, imag;
-        // Complex() { }
-        // Complex(double r = 0.0) { real = r, imag = 0.0; }
+        Complex() { }
+        Complex(double r) { real = r, imag = 0.0; }
         Complex(double r, double i) { real = r, imag = i; }
         ~Complex() { }
         friend Complex operator+(Complex& co1, Complex& co2)
