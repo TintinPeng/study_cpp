@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-09-07 08:30:43
- * @LastEditTime: 2020-09-08 16:21:02
+ * @LastEditTime: 2020-09-12 19:38:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /study_cpp/src/example/ex_5_1.cpp
@@ -35,7 +35,7 @@ int main(int argc, char const* argv[])
 {
         Complex com1(1.1, 2.1);
         Complex com2(1.1);
-        Complex total(0.0, 0.0);
+        Complex total;
         total = com1 + com2;
         total.print();
         return 0;
