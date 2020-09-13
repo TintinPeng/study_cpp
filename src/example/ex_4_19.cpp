@@ -42,11 +42,11 @@ int main(int argc, char const* argv[])
         b1.show();
 
         Derived d2(22);
-        Base& b2 = d2;
+        Base&   b2 = d2;
         b2.show();
 
         Derived d3(33);
-        Base* b3 = &d3;
+        Base*   b3 = &d3;
         b3->show();
 
         Derived d4(44);
