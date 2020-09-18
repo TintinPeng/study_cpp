@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2020-09-12 21:16:31
- * @LastEditTime: 2020-09-12 21:30:21
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/example/ex_5_20.cpp
- */
 #include "iostream"
 
 using namespace std;
