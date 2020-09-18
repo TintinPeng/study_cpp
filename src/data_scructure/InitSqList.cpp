@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include "../../inc/tintin.hpp"
+
 using namespace std;
 
 template <typename ElemType>
@@ -16,11 +18,11 @@ public:
                 initSize = _initSize;
         }
         ~SeqList() { }
-        void SeqList_Init()
+        void Init()
         {
                 data = new ElemType[initSize];
         }
-        void SeqList_Print()
+        void Print()
         {
                 if (length == 0) {
                         cout << "这是一个空表" << endl;
@@ -30,11 +32,21 @@ public:
                         }
                 }
         }
+        void Attach(const ElemType _data[])
+        {
+                for (int i = 0; i < getArrayLen(_data); i++) {
+                        *(data + length) = _data[length];
+                        length++;
+                }
+        }
 };
 
 int main(int argc, char const* argv[])
 {
-        SeqList<int> list1(50);
-        list1.SeqList_Print();
+        const int    a[6] = { 3, 5, 5, 8, 9, 26 };
+        SeqList<int> seq_list_1(50);
+        seq_list_1.Init();
+        seq_list_1.Attach(a);
+        seq_list_1.Print();
         return 0;
 }

@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2020-09-12 19:30:35
- * @LastEditTime: 2020-09-12 20:08:16
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/practice/pr_11.cpp
- */
 #include "../../inc/tintin.hpp"
 #include <cmath>
 #include <iostream>

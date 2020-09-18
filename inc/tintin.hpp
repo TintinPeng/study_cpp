@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2020-09-07 15:35:03
- * @LastEditTime: 2020-09-12 10:19:32
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /study_cpp/inc/tintin.hpp
- */
 #ifndef _TINTIN_HPP
 #define _TINTIN_HPP
 #include <iostream>

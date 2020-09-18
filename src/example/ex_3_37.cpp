@@ -62,6 +62,7 @@ void B::show()
         a.show();
         cout << "z=" << z << endl;
 }
+
 int main(int argc, char const* argv[])
 {
         /*
