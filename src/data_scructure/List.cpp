@@ -6,7 +6,7 @@ class List {
 private:
 	ElemType* data;
 	uint	  length;
-	uint	  initSize;
+	uint	  InitSize;
 
 public:
 	List(uint _InitSize);
@@ -26,7 +26,7 @@ template <typename ElemType>
 List<ElemType>::List(uint _InitSize = 0)
 {
 	length = 0;
-	initSize = _InitSize;
+	InitSize = _InitSize;
 }
 
 template <typename ElemType>
@@ -62,7 +62,11 @@ void List<ElemType>::GetElem()
 template <typename ElemType>
 void List<ElemType>::InitList()
 {
-	data = new ElemType[initSize];
+	if (InitSize == 0) {
+		cerr << "请至少包含一个数据元素" << endl;
+	} else {
+		data = new ElemType[InitSize];
+	}
 }
 
 template <typename ElemType>
