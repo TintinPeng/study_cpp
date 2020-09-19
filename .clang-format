@@ -55,8 +55,8 @@ CommentPragmas:  '^ IWYU pragma:'
 CompactNamespaces: false
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 
-ConstructorInitializerIndentWidth: 8
-ContinuationIndentWidth: 8
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
 
 Cpp11BracedListStyle: false
 DeriveLineEnding: true
@@ -85,7 +85,7 @@ IndentCaseLabels: false
 IndentGotoLabels: true
 IndentPPDirectives: None
 
-IndentWidth:     8
+IndentWidth:     4
 
 IndentWrappedFunctionNames: false
 JavaScriptQuotes: Leave
@@ -137,7 +137,7 @@ StatementMacros:
   - Q_UNUSED
   - QT_REQUIRE_VERSION
 
-TabWidth:        8 
+TabWidth:        4 
 
 UseCRLF:         false
 UseTab:          true
