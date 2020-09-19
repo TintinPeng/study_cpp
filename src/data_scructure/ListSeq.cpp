@@ -121,7 +121,7 @@ unsigned int SeqList<ElemType>::get_Length()
 
 int main(int argc, char const* argv[])
 {
-	const int    a[] = { 3, 5, 5, 8, 9, 26 };
+	const int	 a[] = { 3, 5, 5, 8, 9, 26 };
 	SeqList<int> seq_list_1(50);
 
 	seq_list_1.Init();
