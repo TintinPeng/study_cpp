@@ -1,14 +1,25 @@
-#include <iostream>
+int func(int n)
+{
+        if (n <= 1)
+                return 1;
+        return n * func(n - 1);
+}
 
-using namespace std;
+int func(int n)
+{
+        int i = 0, sum = 0;
+        while (sum < n)
+                sum += ++i;
+        return i;
+}
 
-int main(int argc, char const* argv[])
+void func(int n)
 {
         int i = 0;
-        while (i <= 12)
-                i = i * 2;
-        // x = 0;
-        // while (n >= (x + 1) * (x + 1))
-        //         x = x + 1;
-        return 0;
+        while (i * i * i <= n)
+                i++;
 }
+
+x = 0;
+while (n >= (x + 1) * (x + 1))
+        x = x + 1;
