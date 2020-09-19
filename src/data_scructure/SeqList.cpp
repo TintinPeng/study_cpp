@@ -142,6 +142,5 @@ int main(int argc, char const* argv[])
 
         seq_list_1.Destory();
         seq_list_1.Print();
-
         return 0;
 }
