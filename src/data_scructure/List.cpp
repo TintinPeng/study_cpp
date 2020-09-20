@@ -9,12 +9,12 @@ private:
 	uint	  InitSize;
 
 public:
-	List(uint _InitSize);
+	List(uint);
 	~List();
 	bool Empty();
 	uint Length();
 	void DestroyList();
-	void GetElem();
+	void GetElem(uint position);
 	void InitList();
 	void ListDelete();
 	void ListInsert();
@@ -23,7 +23,7 @@ public:
 };
 
 template <typename ElemType>
-List<ElemType>::List(uint _InitSize = 0)
+List<ElemType>::List(uint _InitSize)
 {
 	length = 0;
 	InitSize = _InitSize;
@@ -52,10 +52,12 @@ uint List<ElemType>::Length()
 template <typename ElemType>
 void List<ElemType>::DestroyList()
 {
+	delete data;
+	length = 0;
 }
 
 template <typename ElemType>
-void List<ElemType>::GetElem()
+void List<ElemType>::GetElem(uint position)
 {
 }
 
@@ -72,8 +74,6 @@ void List<ElemType>::InitList()
 template <typename ElemType>
 void List<ElemType>::ListDelete()
 {
-	delete data;
-	length = 0;
 }
 
 template <typename ElemType>
@@ -101,5 +101,8 @@ void List<ElemType>::PrintList()
 
 int main()
 {
+	int* a;
+	a = NULL;
+	cout << a << endl;
 	return 0;
 }
