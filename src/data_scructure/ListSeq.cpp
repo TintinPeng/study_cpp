@@ -12,7 +12,7 @@ private:
 
 public:
 	SeqList(uint _initSize);
-	~SeqList() { }
+	~SeqList();
 	void Init();
 	void Print();
 	void Attach(const ElemType _data[], int dataLen);
@@ -20,7 +20,7 @@ public:
 	void Delete(uint position);
 	void Locate(ElemType _data);
 	void Destory();
-	uint get_Length();
+	uint ListLength();
 };
 
 template <typename ElemType>
@@ -28,6 +28,12 @@ SeqList<ElemType>::SeqList(uint _initSize)
 {
 	length = 0;
 	initSize = _initSize;
+}
+
+template <typename ElemType>
+SeqList<ElemType>::~SeqList()
+{
+	// delete[] data;
 }
 
 template <typename ElemType>
@@ -114,7 +120,7 @@ void SeqList<ElemType>::Destory()
 }
 
 template <typename ElemType>
-unsigned int SeqList<ElemType>::get_Length()
+uint SeqList<ElemType>::ListLength()
 {
 	return length;
 }
@@ -130,7 +136,7 @@ int main(int argc, char const* argv[])
 	seq_list_1.Attach(a, getArrayLen(a));
 	seq_list_1.Print();
 
-	cout << "表长n=" << seq_list_1.get_Length() << endl;
+	cout << "表长n=" << seq_list_1.ListLength() << endl;
 
 	seq_list_1.Insert(3, 0);
 	seq_list_1.Print();

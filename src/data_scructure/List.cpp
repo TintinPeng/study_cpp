@@ -7,9 +7,10 @@ private:
 	ElemType* data;
 	uint	  length;
 	uint	  InitSize;
+	// uint	  n[];
 
 public:
-	List(uint);
+	List(uint _InitSize);
 	~List();
 	bool Empty();
 	uint Length();
@@ -101,8 +102,5 @@ void List<ElemType>::PrintList()
 
 int main()
 {
-	int* a;
-	a = NULL;
-	cout << a << endl;
 	return 0;
 }
