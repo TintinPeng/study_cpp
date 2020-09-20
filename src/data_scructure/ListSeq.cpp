@@ -1,4 +1,4 @@
-#include "../../inc/tintin.hpp"
+#include "tintin.hpp"
 #include <iostream>
 
 using namespace std;
