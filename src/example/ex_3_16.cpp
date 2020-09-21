@@ -1,12 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2020-08-12 10:18:21
- * @LastEditTime: 2020-08-31 01:39:17
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/example/ex_3_16.cpp
- */
-
 #include "cmath"
 #include "iostream"
 
