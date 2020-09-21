@@ -21,6 +21,8 @@ private:
 public:
 	LinkList();
 	~LinkList();
+	void CreateListF(); // 头插法
+	void CreateListR(); // 尾插法
 };
 
 template <typename Type>
