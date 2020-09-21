@@ -83,7 +83,7 @@
 			"cpp": "g++ -g $dir/$fileName -I $workspaceRoot/inc -o $workspaceRoot/build/$fileNameWithoutExt && $workspaceRoot/build/$fileNameWithoutExt"
 		},
 		"C_Cpp.clang_format_fallbackStyle": "WebKit",
-		"prettier.tabWidth": 8,
+		"prettier.tabWidth": 4,
 		"C_Cpp.clang_format_path": "/usr/bin/clang-format",
 		"indentRainbow.ignoreErrorLanguages": ["cpp", "markdown"]
 		// "C_Cpp.clang_format_path": "$HOME/Workspaces/study_cpp/.clang-format"

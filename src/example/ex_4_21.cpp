@@ -1,23 +1,14 @@
-/*
- * @Author: your name
- * @Date: 2020-08-27 16:35:41
- * @LastEditTime: 2020-08-31 10:34:19
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/example/ex_4_21.cpp
- */
-
 #include "iostream"
 
 using namespace std;
 
 class Data_rec {
-	protected:
+protected:
 	string name;
 	char   sex;
 	int	   age;
 
-	public:
+public:
 	Data_rec(string _name, char _sex, int _age)
 	{
 		name = _name;
@@ -34,11 +25,11 @@ class Data_rec {
 };
 
 class Student : virtual public Data_rec {
-	protected:
+protected:
 	string major;
 	double score;
 
-	public:
+public:
 	Student(string _name, char _sex, int _age,
 		string _major, double _score)
 		: Data_rec(_name, _sex, _age)
@@ -56,11 +47,11 @@ class Student : virtual public Data_rec {
 };
 
 class Employee : virtual public Data_rec {
-	protected:
+protected:
 	string dept;
 	double salary;
 
-	public:
+public:
 	Employee(string _name, char _sex, int _age, string _dept, double _salary)
 		: Data_rec(_name, _sex, _age)
 	{
@@ -77,13 +68,13 @@ class Employee : virtual public Data_rec {
 };
 
 class Teacher : public Employee {
-	private:
+private:
 	/* data */
 
-	protected:
+protected:
 	string title;
 
-	public:
+public:
 	Teacher(string _name, char _sex, int _age,
 		string _dept, double _salary, string _title)
 		: Data_rec(_name, _sex, _age)
@@ -100,7 +91,7 @@ class Teacher : public Employee {
 };
 
 class E_Student : public Employee, public Student {
-	public:
+public:
 	E_Student(string _name, char _sex, int _age,
 		string _major, double _score,
 		string _dept, double _salary)

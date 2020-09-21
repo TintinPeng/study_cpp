@@ -3,47 +3,47 @@
 
 using namespace std;
 
-template <typename ElemType>
+template <typename Type>
 class SeqList {
 private:
-	ElemType* data;
-	uint	  length;
-	uint	  initSize;
+	Type* data;
+	uint  length;
+	uint  initSize;
 
 public:
 	SeqList(uint _initSize);
 	~SeqList();
 	void Init();
 	void Print();
-	void Attach(const ElemType _data[], int dataLen);
-	void Insert(uint position, ElemType _data);
+	void Attach(const Type _data[], int dataLen);
+	void Insert(uint position, Type _data);
 	void Delete(uint position);
-	void Locate(ElemType _data);
+	void Locate(Type _data);
 	void Destory();
 	uint ListLength();
 };
 
-template <typename ElemType>
-SeqList<ElemType>::SeqList(uint _initSize)
+template <typename Type>
+SeqList<Type>::SeqList(uint _initSize)
 {
 	length = 0;
 	initSize = _initSize;
 }
 
-template <typename ElemType>
-SeqList<ElemType>::~SeqList()
+template <typename Type>
+SeqList<Type>::~SeqList()
 {
 	// delete[] data;
 }
 
-template <typename ElemType>
-void SeqList<ElemType>::Init()
+template <typename Type>
+void SeqList<Type>::Init()
 {
-	data = new ElemType[initSize];
+	data = new Type[initSize];
 }
 
-template <typename ElemType>
-void SeqList<ElemType>::Print()
+template <typename Type>
+void SeqList<Type>::Print()
 {
 	if (length == 0) {
 		cout << "这是一个空表" << endl;
@@ -55,8 +55,8 @@ void SeqList<ElemType>::Print()
 	}
 }
 
-template <typename ElemType>
-void SeqList<ElemType>::Attach(const ElemType _data[], int dataLen)
+template <typename Type>
+void SeqList<Type>::Attach(const Type _data[], int dataLen)
 {
 	for (int i = 0; i < dataLen; i++) {
 		*(data + length) = _data[length];
@@ -64,8 +64,8 @@ void SeqList<ElemType>::Attach(const ElemType _data[], int dataLen)
 	}
 }
 
-template <typename ElemType>
-void SeqList<ElemType>::Insert(uint position, ElemType _data)
+template <typename Type>
+void SeqList<Type>::Insert(uint position, Type _data)
 {
 	if (length == initSize) {
 		cerr << "当前顺序表数据已满，拒绝插入" << endl;
@@ -82,8 +82,8 @@ void SeqList<ElemType>::Insert(uint position, ElemType _data)
 	}
 }
 
-template <typename ElemType>
-void SeqList<ElemType>::Delete(uint position)
+template <typename Type>
+void SeqList<Type>::Delete(uint position)
 {
 	if (position == 0 || position > initSize) {
 		cerr << "无此数据" << endl;
@@ -97,8 +97,8 @@ void SeqList<ElemType>::Delete(uint position)
 	}
 }
 
-template <typename ElemType>
-void SeqList<ElemType>::Locate(ElemType _data)
+template <typename Type>
+void SeqList<Type>::Locate(Type _data)
 {
 	bool flag = true;
 	for (int i = 0; i < length; i++) {
@@ -112,15 +112,15 @@ void SeqList<ElemType>::Locate(ElemType _data)
 	}
 }
 
-template <typename ElemType>
-void SeqList<ElemType>::Destory()
+template <typename Type>
+void SeqList<Type>::Destory()
 {
 	delete data;
 	length = 0;
 }
 
-template <typename ElemType>
-uint SeqList<ElemType>::ListLength()
+template <typename Type>
+uint SeqList<Type>::ListLength()
 {
 	return length;
 }
