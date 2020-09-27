@@ -47,7 +47,6 @@ void LinkList<Type>::CreateListF(Type a[], int n)
 	ListNode<Type>* s;
 	for (int i = 0; i < n; i++) {
 		s = new ListNode<Type>;
-		// !稍后讨论
 		if (i == 0) {
 			last = s;
 		}
