@@ -12,6 +12,5 @@ int main()
 	}
 	*p = 20;
 	cout << *p << endl;
-	cout << "123" << endl;
 	delete p;
 }
