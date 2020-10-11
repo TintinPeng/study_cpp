@@ -14,9 +14,9 @@ public:
 
 int main()
 {
-	/*
-     * c++程序结构性示例
-     */
+
+	// c++程序结构性示例
+
 	sum A;
 	cout << "请输入两个数" << endl;
 	cin >> A.x >> A.y;
