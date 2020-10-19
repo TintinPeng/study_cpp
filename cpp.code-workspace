@@ -80,7 +80,7 @@
 		"code-runner.saveAllFilesBeforeRun": true,
 		"code-runner.saveFileBeforeRun": true,
 		"code-runner.executorMap": {
-			"cpp": "g++ -g $dir/$fileName -I $workspaceRoot/inc -o $workspaceRoot/build/$fileNameWithoutExt && $workspaceRoot/build/$fileNameWithoutExt"
+			"cpp": "g++ -g $dir/$fileName -ggdb `pkg-config --cflags --libs opencv4` -I $workspaceRoot/inc -o $workspaceRoot/build/$fileNameWithoutExt && $workspaceRoot/build/$fileNameWithoutExt"
 		},
 		"C_Cpp.clang_format_fallbackStyle": "WebKit",
 		"prettier.tabWidth": 4,
