@@ -71,11 +71,6 @@
 			"variant": "cpp"
 		},
 
-		"commentTranslate.targetLanguage": "zh-CN",
-		"commentTranslate.multiLineMerge": true,
-
-		"indentRainbow.excludedLanguages": ["plaintext"],
-
 		"code-runner.runInTerminal": true,
 		"code-runner.saveAllFilesBeforeRun": true,
 		"code-runner.saveFileBeforeRun": true,
@@ -83,9 +78,8 @@
 			"cpp": "g++ -g $dir/$fileName -ggdb `pkg-config --cflags --libs opencv4` -I $workspaceRoot/inc -o $workspaceRoot/build/$fileNameWithoutExt && $workspaceRoot/build/$fileNameWithoutExt"
 		},
 		"C_Cpp.clang_format_fallbackStyle": "WebKit",
-		"prettier.tabWidth": 4,
 		"C_Cpp.clang_format_path": "/usr/bin/clang-format",
-		"indentRainbow.ignoreErrorLanguages": ["cpp", "markdown"]
-		// "C_Cpp.clang_format_path": "$HOME/Workspaces/study_cpp/.clang-format"
+		
+		"prettier.tabWidth": 4
 	}
 }

@@ -6,14 +6,15 @@
 using namespace std;
 using namespace cv;
 
-const string workspace = "/home/tintin/Workspaces/VSCode/cpp/src/OpenCV";
+// const string workspace = "/home/tintin/Workspaces/VSCode/cpp/src/OpenCV";
 
 int main()
 {
-	string filename = workspace + "/pictures/001.png";
-	Mat	   img = imread(filename);
-	namedWindow(filename, WINDOW_AUTOSIZE);
-	imshow(filename, img);
-	waitKey(0);
+	// string filename = workspace + "/pictures/001.png";
+	// Mat	   img = imread(filename);
+	// namedWindow(filename, WINDOW_AUTOSIZE);
+	// imshow(filename, img);
+	// waitKey(0);
+
 	return 0;
 }
