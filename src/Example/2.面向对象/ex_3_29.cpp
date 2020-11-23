@@ -1,14 +1,7 @@
-/*
- * @Author: your name
- * @Date: 2020-08-12 17:01:20
- * @LastEditTime: 2020-08-31 10:20:23
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/example/ex_3_29.cpp
- */
+#include <iostream>
 
-#include "iostream"
 using namespace std;
+
 class Student {
 private:
 	string		 name;
