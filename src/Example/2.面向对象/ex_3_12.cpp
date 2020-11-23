@@ -1,14 +1,5 @@
-/*
- * @Author: your name
- * @Date: 2020-08-12 09:27:52
- * @LastEditTime: 2020-08-31 01:53:14
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/example/ex_3_12.cpp
- */
-
-#include "cmath"
-#include "iostream"
+#include <cmath>
+#include <iostream>
 
 using namespace std;
 
@@ -52,10 +43,10 @@ public:
 int main(int argc, char const* argv[])
 {
 	/* 
-         * 带有默认参数的构造函数;
-         * 如果构造函数在类外定义,那么默认参数应该在类内声明构造函数原型时指定,而不能在类外构造函数定义时指定;
-         * 不能同时使用构造函数的重载和带有默认参数的构造函数;
-         */
+     * 带有默认参数的构造函数;
+     * 如果构造函数在类外定义,那么默认参数应该在类内声明构造函数原型时指定,而不能在类外构造函数定义时指定;
+     * 不能同时使用构造函数的重载和带有默认参数的构造函数;
+     */
 	complex num1;
 	num1.complex_abs();
 	num1.complex_print();

@@ -1,12 +1,5 @@
-/*
- * @Author: your name
- * @Date: 2020-08-11 14:19:11
- * @LastEditTime: 2020-08-31 10:30:20
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/ex_3_7.cpp
- */
-#include "iostream"
+#include <iostream>
+
 using namespace std;
 
 class A {
@@ -41,9 +34,9 @@ void A::print()
 
 int main(int argc, char const* argv[])
 {
-	/* 
-         * 用成员初始化列表对引用类型的数据成员rx和const修饰的数据成员PI初始化
-         */
+
+	// 用成员初始化列表对引用类型的数据成员rx和const修饰的数据成员PI初始化
+
 	A a(10);
 	a.print();
 	return 0;

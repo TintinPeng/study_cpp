@@ -1,13 +1,5 @@
-/*
- * @Author: your name
- * @Date: 2020-08-10 15:20:54
- * @LastEditTime: 2020-08-31 00:29:19
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /study_cpp/src/ex_3_5.cpp
- */
-#include "cmath"
-#include "iostream"
+#include <cmath>
+#include <iostream>
 
 using namespace std;
 
@@ -53,8 +45,8 @@ public:
 int main(int argc, char const* argv[])
 {
 	/* 
-         * 采用构造函数给数据成员赋初值
-         */
+     * 采用构造函数给数据成员赋初值
+     */
 	complex num(-3, 4);
 	num.complex_abs();
 	num.complex_print();
